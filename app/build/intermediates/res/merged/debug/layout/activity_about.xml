@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_layout_bg" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/top_bar_layout_color" >
+
+        <ImageView android:id="@+id/back_button"
+            tools:ignore="ContentDescription"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/top_bar_back_button_margin_left"
+            android:scaleType="center"
+            android:src="@drawable/top_bar_back_button_normal" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/about"
+            android:textColor="@color/top_bar_title_text_color"
+            android:textSize="@dimen/top_bar_title_text_size" />
+
+        <View
+            android:id="@+id/top_bar_layout_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_layout_divider_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_activity_tabwidget_divider_color" />
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar_layout" >
+
+        <RelativeLayout android:id="@+id/large_logo_layout"
+			android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <ImageView android:id="@+id/large_logo"
+                tools:ignore="ContentDescription" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="49.7dip"
+                android:src="@drawable/about_large_logo" />
+            
+            <ImageView android:id="@+id/large_logo_title"
+                tools:ignore="ContentDescription" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:layout_below="@id/large_logo"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/about_title" />
+            
+            <TextView android:id="@+id/large_logo_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dip"
+                android:layout_below="@id/large_logo_title"
+                android:textSize="12sp"
+                android:textColor="#999999" />
+            
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent" />
+        
+    </LinearLayout>
+</RelativeLayout>

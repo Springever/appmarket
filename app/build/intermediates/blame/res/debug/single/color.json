@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\color\\sub_activity_tab_indicator_text_color.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\color\\sub_activity_tab_indicator_text_color.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\color\\main_activity_tab_indicator_text_color.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\color\\main_activity_tab_indicator_text_color.xml"
+    }
+]

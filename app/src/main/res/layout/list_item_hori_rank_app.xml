@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:paddingLeft="@dimen/common_list_marginx"
+    android:paddingRight="@dimen/common_list_marginx">
+
+    <RelativeLayout android:id="@+id/item_content"
+        tools:ignore="UselessParent" 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_one_column_height"
+        android:background="#ffffff">
+        
+        <com.appmall.market.widget.RoundImageView android:id="@+id/icon"
+	        tools:ignore="ContentDescription"
+	        android:layout_width="@dimen/common_item_icon_size"
+	        android:layout_height="@dimen/common_item_icon_size"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	    />
+        
+         <TextView
+       	    android:id="@+id/corner_label"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignRight="@id/icon"
+        	android:layout_alignTop="@id/icon"
+		    android:layout_marginRight="@dimen/corner_label_margin_right"
+		    android:layout_marginTop="@dimen/corner_label_margin_top"
+       		android:gravity="center"
+       		android:textSize="@dimen/common_button_corner_text_size"
+       		android:textColor="#ffffff"
+       	/>
+	
+	    <com.appmall.market.widget.DownStatusButton android:id="@+id/down_button"
+	        android:layout_width="@dimen/common_button_rect_width"
+	        android:layout_height="@dimen/common_button_rect_height"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+			android:textSize="@dimen/common_button_text_size"
+			android:textColor="@color/green_bg_text_color"
+			android:background="@drawable/btn_green_bg"
+	        android:text="@string/download" />
+	    
+	    <RelativeLayout
+	        android:orientation="vertical"
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_toRightOf="@id/icon"
+	        android:layout_toLeftOf="@id/down_button"
+	        android:layout_marginLeft="@dimen/common_item_title_margin_left"
+	        android:layout_centerVertical="true" >
+	        
+	        <TextView android:id="@+id/label"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:ellipsize="end"
+	            android:singleLine="true"
+	            android:textSize="@dimen/common_item_title_text_size"
+	            android:textColor="@color/common_item_title_text_color"
+	            android:layout_marginTop="@dimen/common_item_title_margin_top"
+	            />
+	        
+	        <com.appmall.market.widget.RankStarWidget android:id="@+id/star" 
+	            android:layout_width="@dimen/rank_star_widget_width"
+	            android:layout_height="@dimen/rank_star_widget_height"
+	            android:layout_marginTop="2dip"
+	            android:layout_below="@id/label"/>
+	        
+	        <TextView android:id="@+id/desciprtion" 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/star"
+	            android:layout_marginTop="3dip"
+	            android:ellipsize="end"
+	            android:singleLine="true"
+	            android:textSize="@dimen/common_item_desc_text_size"
+	            android:textColor="@color/common_item_desc_text_color" 
+	            />
+	        
+	    </RelativeLayout>
+	        	    
+    </RelativeLayout>
+            	<View
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:paddingLeft="@dimen/common_divideline_margin"
+		        android:paddingRight="@dimen/common_divideline_margin"
+		        android:background="@color/common_divider_color"
+		        android:layout_alignParentBottom="true"
+	   			/>
+</RelativeLayout>

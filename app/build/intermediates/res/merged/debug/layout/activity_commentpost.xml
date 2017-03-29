@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_comment_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>       
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+	    android:background="#c0000000"	    
+	>
+    	<RelativeLayout 
+   	        android:layout_width="276dip"
+		    android:layout_height="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:background="#ffffff"
+		>
+	        
+    	    <RelativeLayout 
+    	        android:id="@+id/layout_comment_dialog_head"
+    	        android:layout_width="276dip"
+			    android:layout_height="59.5dip"
+    	        >
+    	        
+    	        <ImageView
+    	            android:id="@+id/dialog_head_icon"
+    	            android:contentDescription="@string/app_name"
+		            android:layout_width="@dimen/top_bar_height"
+		            android:layout_height="@dimen/top_bar_height"
+			    	android:layout_margin="8dip"
+    	        />
+    	        
+    	        <TextView
+		            android:id="@+id/dialog_head_title"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="11.3dip"
+		            android:layout_marginLeft="5.3dip"
+		            android:layout_toRightOf="@id/dialog_head_icon"
+		            android:text="@string/app_detail"
+		            android:textColor="@color/top_bar_title_text_color"
+		            android:textSize="12.4sp" />
+    	        
+    	        <TextView
+    	        	android:id="@+id/dialog_head_text_version"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+    	        	android:textSize="10.6sp"
+    	        	android:layout_alignLeft="@id/dialog_head_title"
+    	        	android:layout_below="@id/dialog_head_title"
+    	        />
+    	        
+    	        <View
+    	            android:layout_width="fill_parent"
+		            android:layout_height="1px"
+		            android:background="#3fc6a8"
+		            android:layout_alignParentBottom="true"/>
+    	        
+    	    </RelativeLayout>
+    	    
+    	    <RelativeLayout
+    	        android:id="@+id/layout_star"
+    	        android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/layout_comment_dialog_head"
+			    android:layout_marginTop="15dip"
+				android:layout_marginLeft="20dip"
+    	        >
+                <com.appmall.market.widget.RankStarWidget android:id="@+id/rank_star"
+                    android:layout_width="@dimen/feedback_rank_star_width"
+                    android:layout_height="@dimen/feedback_rank_star_height"
+                    android:layout_marginRight="@dimen/feedback_hori_margin"
+                    android:layout_centerVertical="true" />
+    	        	
+    	        	<TextView
+    	        	    android:id="@+id/text_rank_star"
+    	        		android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"
+    	        		android:text="@string/click_star_text"
+    	        		android:gravity="center_vertical"
+    	        		android:layout_centerVertical="true"
+    	        		android:layout_toRightOf="@id/rank_star"
+    	        		android:textSize="12sp"
+                    	android:textColor="#aaaaaa" />
+    	        	    	        
+    	    </RelativeLayout>
+   	        
+   	        <EditText android:id="@+id/edit_comment"
+  	        	android:layout_width="393.3dip"
+	        	android:layout_height="126.2dip" 
+  	        	android:layout_marginTop="17.7dip"
+  	        	android:layout_marginLeft="8dip"
+  	        	android:layout_marginRight="8dip"
+                android:maxLength="400"
+                android:background="@drawable/edittext_margin_bg"
+                android:layout_below="@id/layout_star"
+                android:padding="@dimen/feedback_content_padding"
+                android:gravity="top|left"
+                android:textColorHint="@color/feedback_hint_color"
+                android:textSize="@dimen/feedback_content_text_size"
+                android:textColor="@color/feedback_content_text_color"
+                android:hint="@string/comment_edittext_hint_text"/>
+   	        
+			<LinearLayout 
+			    android:id="@+id/layout_buttongroup"
+			    android:layout_width="fill_parent"
+	        	android:layout_height="41.7dip"
+	        	android:layout_marginTop="9.7dip"
+	        	android:orientation="horizontal"
+	        	android:layout_below="@id/edit_comment"
+			    >
+			    <TextView
+			        android:id="@+id/comment_dialog_cancel"
+			        android:layout_width="fill_parent"
+	        		android:layout_height="fill_parent"
+			        android:text="@string/dialog_cancel"
+			        android:layout_weight="1"
+			        android:textSize="12.4sp"
+			        android:textColor="@color/common_item_title_text_color"
+			        android:gravity="center"
+			        />
+			    <View 
+				    android:layout_width="1px"
+		        	android:layout_height="fill_parent"
+		        	android:background="@color/common_divider_color"
+		        	android:layout_gravity="center_horizontal"
+			    />
+			    <TextView
+			        android:id="@+id/comment_dialog_commit"
+			        android:layout_width="fill_parent"
+	        		android:layout_height="fill_parent"
+			        android:text="@string/dialog_commit"
+			        android:layout_weight="1"
+			        android:textSize="12.4sp"
+			        android:textColor="#3fc6a8"
+			        android:gravity="center"
+			        />
+	    
+			</LinearLayout>
+    	    
+			<View 
+			    android:layout_width="fill_parent"
+	        	android:layout_height="1px"
+	        	android:background="@color/common_divider_color"
+	        	android:layout_alignTop="@id/layout_buttongroup"
+			    />
+    	    
+    	  </RelativeLayout>
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_layout_bg" >
+    
+    <RelativeLayout
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/top_bar_layout_color" >
+
+        <ImageView android:id="@+id/back_button"
+            tools:ignore="ContentDescription"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/top_bar_back_button_margin_left"
+            android:scaleType="center"
+            android:src="@drawable/top_bar_back_button_normal"
+         />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/manage_download_title"
+            android:textColor="@color/top_bar_title_text_color"
+            android:textSize="@dimen/top_bar_title_text_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_layout_divider_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_activity_tabwidget_divider_color" />
+    </RelativeLayout>
+    
+    <com.appmall.market.pulltorefresh.library.PullToRefreshExpandableListView android:id="@+id/ptr_listview" 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@id/top_bar_layout"
+	        android:background="@android:color/transparent"
+	        android:listSelector="@android:color/transparent"
+	        android:indicatorLeft="0dp"
+	        android:groupIndicator="@null"
+	        android:childDivider="@color/common_divider_color"
+        	android:divider="@null"
+	        android:footerDividersEnabled="false" />
+    
+		<RelativeLayout
+		    android:id="@android:id/empty"
+		    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true">
+
+		    <ImageView 
+		        android:id="@+id/emptyview_image"
+		        android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		tools:ignore="ContentDescription"
+        		android:layout_centerHorizontal="true"
+		        android:src="@drawable/content_empty_icon"
+		    />
+		    <TextView
+		        android:id="@+id/emptyview_text"
+		        android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_below="@id/emptyview_image"
+        		android:layout_centerHorizontal="true"
+		        android:text="@string/no_download_task_now"
+		        android:layout_marginTop="24dip"
+		        android:layout_marginBottom="16.8dip"
+		        android:textSize="16sp"
+		        android:textColor="@color/common_item_title_text_color"
+		    />
+		    <TextView
+		        android:id="@+id/emptyview_button"
+		        android:layout_width="82.6dip"
+        		android:layout_height="30dip"
+        		android:layout_centerHorizontal="true"
+        		android:layout_below="@id/emptyview_text"
+        		android:background="@drawable/btn_green_bg"
+        		android:gravity="center"
+        		android:text="@string/enter_to_promote"
+        		android:textSize="16sp"
+        		android:textColor="@color/green_bg_text_color"
+		        />
+        </RelativeLayout>
+    
+</RelativeLayout>

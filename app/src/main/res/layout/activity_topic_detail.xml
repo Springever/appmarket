@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_layout_bg" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/top_bar_layout_color" >
+
+        <ImageView android:id="@+id/back_button"
+            tools:ignore="ContentDescription"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/top_bar_back_button_margin_left"
+            android:scaleType="center"
+            android:src="@drawable/top_bar_back_button_normal" />
+
+        <View
+            android:id="@+id/top_bar_layout_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_layout_divider_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_activity_tabwidget_divider_color" />
+        
+        <ImageView 
+            android:id="@+id/top_bar_download"
+            android:layout_width="22dip"
+            android:layout_height="22dip"
+            android:src="@drawable/download_logo"
+            android:layout_marginRight="12dip"
+            android:layout_marginLeft="10dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+        />
+        
+       <TextView 
+			android:id="@+id/top_bar_download_text"
+			android:layout_width="22dip"
+			android:layout_height="22dip"
+			android:layout_alignRight="@id/top_bar_download"
+			android:layout_alignTop="@id/top_bar_download"
+			android:textColor="#777777"
+			android:textSize="11.3sp"
+			android:textStyle="bold"
+			android:gravity="center"
+			android:visibility="visible"
+    	/>
+        
+        <View
+            android:id="@+id/top_bar_logo_divider"
+            android:layout_width="1dip"
+            android:layout_height="20dip"
+            android:background="#e5e5e5"
+            android:layout_marginLeft="10dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/top_bar_download"
+        />
+        
+        <ImageView 
+            android:id="@+id/top_bar_search"
+            android:layout_width="22dip"
+            android:layout_height="22dip"
+            android:src="@drawable/search_logo"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/top_bar_logo_divider"
+        />
+        
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/topic_detail"
+            android:layout_toLeftOf="@id/top_bar_search"
+            android:layout_toRightOf="@id/back_button"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/top_bar_title_text_color"
+            android:textSize="@dimen/top_bar_title_text_size" />
+    </RelativeLayout>
+
+    <include android:id="@+id/loading_layout"
+        layout="@layout/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    <include android:id="@+id/loading_failed_layout"
+        layout="@layout/loading_failed_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    
+    <ListView android:id="@+id/list_view" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar_layout"
+        android:background="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+		android:divider="@null"
+        android:visibility="gone" />
+    
+     <ImageView 
+           android:id="@+id/image_animation"
+           android:layout_width="@dimen/common_item_icon_size"
+           android:layout_height="@dimen/common_item_icon_size"
+           android:layout_marginTop="@dimen/anim_icon_offset_y"
+           android:src="@drawable/ic_launcher"
+           android:layout_below="@id/top_bar_layout"
+           android:layout_alignParentRight="true"
+           android:visibility="gone"
+      />
+</RelativeLayout>

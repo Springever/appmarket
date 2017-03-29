@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/common_list_marginx"
+    android:paddingLeft="@dimen/common_list_marginx"
+   	android:paddingRight="@dimen/common_list_marginx" 
+    >
+    
+        <LinearLayout
+            android:id="@+id/layout_categoryadvert"
+            android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+
+    	>
+            
+		    <com.appmall.market.widget.RoundImageView android:id="@+id/left_image"
+		        tools:ignore="ContentDescription"
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/list_item_category_advert_height"
+		        android:layout_weight="0.5"
+		        android:layout_marginRight="@dimen/list_item_category_advert_margin_right"
+		        android:src="@drawable/default_app_icon"
+		        android:scaleType="fitXY" />
+		
+		    <com.appmall.market.widget.RoundImageView android:id="@+id/right_image"
+		        tools:ignore="ContentDescription"
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/list_item_category_advert_height"
+		        android:layout_weight="0.5"
+		        android:src="@drawable/default_app_icon"
+		        android:scaleType="fitXY" />
+    	</LinearLayout>
+  	
+      	<View android:id="@+id/category_advert_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        android:layout_below="@id/layout_categoryadvert"
+        android:layout_marginTop="8dp"
+        android:background="@color/common_divider_color" />
+    
+</RelativeLayout>

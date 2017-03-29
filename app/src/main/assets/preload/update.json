@@ -1,0 +1,34 @@
+{
+  "context": "context",
+  "entities": {
+    "noticeInterval": 11.11,
+    "upappitems": {
+      "0": {
+        "packagename": "com.yitong.hrbydyx",
+        "version": 33,
+        "versionname": "4.0",
+        "size": 2048,
+        "title": "新发布",
+        "updateinfo": "移动发卡2.0",
+        "pkg_id": 12,
+        "isPatch": true,
+        "patchSize": 10,
+        "patchUrl": "http://130.1.11.177:9080/mmp/getPatch.do?packagename=com.hrbb.ydyx"
+      }
+    },
+    "ignoreappitems": {
+      "0": {
+        "packagename": "com.hrbvb.hrbydyx",
+        "version": 2,
+        "versionname": "1.1",
+        "size": 2048,
+        "title": "新发布",
+        "updateinfo": "新增惠农通签约",
+        "pkg_id": 12,
+        "isPatch": true,
+        "patchSize": 10,
+        "patchUrl": "http://130.1.11.177:9080/mmp/getPatch.do?packagename=com.hrbvb.ydyx"
+      }
+    }
+  }
+}

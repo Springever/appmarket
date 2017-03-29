@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:PullToRefresh="http://schemas.android.com/apk/res/com.appmall.market"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1" >
+    
+		<Button
+			android:id="@+id/updateall_button"
+			android:layout_width="@dimen/setting_activity_exit_button_width"
+			android:layout_height="@dimen/setting_activity_exit_button_height"
+			android:visibility="gone"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="6dip"
+			android:layout_marginBottom="6dip"
+			android:background="@drawable/btn_green_bg"
+			android:textColor="#3fc6a8"
+			android:textSize="16sp" />
+                
+        <com.appmall.market.pulltorefresh.library.PullToRefreshExpandableListView android:id="@+id/ptr_listview" 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+			android:visibility="gone"
+			android:layout_below="@id/updateall_button"
+	        android:background="@android:color/transparent"
+	        android:listSelector="@android:color/transparent"
+	        android:indicatorLeft="0dp"
+	        android:groupIndicator="@null"
+	        android:childDivider="@color/common_divider_color"
+        	android:divider="@null"
+	        android:footerDividersEnabled="false"
+			PullToRefresh:ptrAnimationStyle="flip"
+        	PullToRefresh:ptrHeaderTextAppearance="@style/pull_to_refresh_text_appearance"/>
+    
+    <include android:id="@+id/loading_layout"
+        layout="@layout/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    <include android:id="@+id/loading_failed_layout"
+        layout="@layout/loading_failed_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    
+</RelativeLayout>

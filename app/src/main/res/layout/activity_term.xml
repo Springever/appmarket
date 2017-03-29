@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_layout_bg" >
+    
+    <RelativeLayout
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/top_bar_layout_color" 
+        android:visibility="gone">
+
+        <ImageView android:id="@+id/back_button"
+            tools:ignore="ContentDescription"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/top_bar_back_button_margin_left"
+            android:scaleType="center"
+            android:src="@drawable/top_bar_back_button_normal"
+         />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_detail"
+            android:textColor="@color/top_bar_title_text_color"
+            android:textSize="@dimen/top_bar_title_text_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_layout_divider_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_activity_tabwidget_divider_color" />
+    </RelativeLayout>
+
+    <WebView android:id="@+id/web_view"
+        android:layout_below="@id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+   	<RelativeLayout
+        android:id="@+id/layout_loading"
+        android:layout_width="wrap_content"   
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+    	<ImageView   
+	        android:id="@+id/image_loading"  
+	        android:layout_width="wrap_content"   
+	        android:layout_height="wrap_content"  
+	        android:src="@drawable/small_loading_progress_icon"
+	        android:layout_alignParentTop="true"  
+       	/>
+    	
+    	<TextView  
+	        android:layout_width="wrap_content"   
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/image_loading"
+	        android:layout_marginTop="6.6dip"
+    	    android:text="@string/ptr_refreshing"
+    	    android:textSize="10sp"
+    	    android:textColor="#666666"
+    	 />      
+    </RelativeLayout> 
+    
+   	<include android:id="@+id/loading_failed_layout"
+        layout="@layout/loading_failed_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    
+</RelativeLayout>

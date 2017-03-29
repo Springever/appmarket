@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/layout_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_top_layout_height"
+        layout="@layout/search_bar_layout" />
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_search_bar" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_activity_tabwidget_height"
+                android:layout_alignParentBottom="true"
+                android:background="@color/tab_widget_bg_color" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_activity_tabwidget_divider_height"
+                android:layout_above="@android:id/tabs"
+                android:background="@color/main_activity_tabwidget_divider_color" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/divider" >
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/anim_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+    </TabHost>
+
+    <ImageView
+        android:id="@+id/image_animation"
+        android:layout_width="@dimen/common_item_icon_size"
+        android:layout_height="@dimen/common_item_icon_size"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/layout_search_bar"
+        android:layout_marginTop="@dimen/anim_icon_offset_y"
+        android:src="@drawable/ic_launcher"
+        android:visibility="gone" />
+
+</RelativeLayout>

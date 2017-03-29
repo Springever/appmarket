@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="57.7dip" 
+    android:background="#ffffff">
+
+    <LinearLayout android:id="@+id/item_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/setting_item_hori_margin"
+        android:gravity="center_vertical" 
+        >
+	    
+	    <TextView
+	        android:id="@+id/setting_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#222222"
+	        android:textSize="@dimen/common_item_title_text_size" 
+	        />
+	
+	    <TextView
+	        android:id="@+id/setting_description"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#777777"
+	        android:textSize="@dimen/common_item_desc_text_size"
+	        android:visibility="gone"
+	        />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/setting_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/setting_item_hori_margin"
+		android:src="@drawable/dialog_checkbox_normal"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/setting_bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_view_divider_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_divider_color" />
+
+</RelativeLayout>

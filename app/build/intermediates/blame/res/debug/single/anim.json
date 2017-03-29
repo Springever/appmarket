@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_top.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\anim\\slide_in_from_top.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_to_bottom.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\anim\\slide_out_to_bottom.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\anim\\load_animation.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\anim\\load_animation.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_to_top.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\anim\\slide_out_to_top.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\anim\\icon_shake_anim.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\anim\\icon_shake_anim.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\anim\\loading_anim.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\anim\\loading_anim.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_bottom.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\anim\\slide_in_from_bottom.xml"
+    }
+]

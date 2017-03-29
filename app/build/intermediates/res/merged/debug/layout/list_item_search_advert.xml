@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false" >
+    
+    <LinearLayout android:id="@+id/advert1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/list_item_search_advert_margin_right"
+        android:background="@drawable/edittext_margin_bg_normal"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/list_item_search_advert_padding_vertical"
+        android:paddingTop="@dimen/list_item_search_advert_padding_vertical" >
+
+        <com.appmall.market.widget.RoundImageView
+            android:id="@+id/search_advert1"
+            android:layout_width="@dimen/list_item_rank_app_item_icon_size"
+            android:layout_height="@dimen/list_item_rank_app_item_icon_size"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/search_text_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/list_item_search_advert_padding_vertical"
+            android:singleLine="true"
+	    	android:ellipsize="end"
+            android:textColor="@color/list_item_search_text_color"
+            android:textSize="@dimen/list_item_search_text_size" />
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/advert2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/list_item_search_advert_margin_right"
+        android:background="@drawable/edittext_margin_bg_normal"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/list_item_search_advert_padding_vertical"
+        android:paddingTop="@dimen/list_item_search_advert_padding_vertical" >
+
+        <com.appmall.market.widget.RoundImageView
+            android:id="@+id/search_advert2"
+            android:layout_width="@dimen/list_item_rank_app_item_icon_size"
+            android:layout_height="@dimen/list_item_rank_app_item_icon_size"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/search_text_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/list_item_search_advert_padding_vertical"
+            android:singleLine="true"
+	    	android:ellipsize="end"
+            android:textColor="@color/list_item_search_text_color"
+            android:textSize="@dimen/list_item_search_text_size" />
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/advert3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_margin_bg_normal"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/list_item_search_advert_padding_vertical"
+        android:paddingTop="@dimen/list_item_search_advert_padding_vertical" >
+
+        <com.appmall.market.widget.RoundImageView
+            android:id="@+id/search_advert3"
+            android:layout_width="@dimen/list_item_rank_app_item_icon_size"
+            android:layout_height="@dimen/list_item_rank_app_item_icon_size"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/search_text_view3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/list_item_search_advert_padding_vertical"
+            android:singleLine="true"
+	    	android:ellipsize="end"
+            android:textColor="@color/list_item_search_text_color"
+            android:textSize="@dimen/list_item_search_text_size" />
+    </LinearLayout>
+    
+</LinearLayout>

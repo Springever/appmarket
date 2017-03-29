@@ -1,0 +1,8 @@
+<resources>
+        
+    <dimen name="update_list_item_height">78dip</dimen>
+    <dimen name="common_item_two_column_height">102dip</dimen>
+    <dimen name="common_item_one_column_height">75dip</dimen>
+    <dimen name="keyword_layout_height">200dip</dimen>
+    
+</resources>

@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/search_top_layout_height"
+    android:background="@color/search_bar_bg_color" >
+
+    <ImageView
+        android:id="@+id/image_downcount"
+        android:layout_width="22dip"
+        android:layout_height="22dip"
+        tools:ignore="ContentDescription"
+        android:src="@drawable/searchbar_download_white_icon"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginLeft="14dip"
+		android:layout_marginRight="14dip"
+    />
+    
+    <TextView 
+		android:id="@+id/float_down_icon_text"
+		android:layout_width="22dip"
+		android:layout_height="22dip"
+		android:layout_alignRight="@id/image_downcount"
+		android:layout_alignTop="@id/image_downcount"
+		android:textColor="#ffffff"
+		android:textSize="12sp"
+		android:textStyle="bold"
+		android:gravity="center"
+		android:visibility="gone"
+    />
+    
+    <ImageView
+        android:id="@+id/image_searchbar"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        tools:ignore="ContentDescription"
+        android:src="@drawable/searchbar_logo"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="12dip"
+		android:layout_marginRight="12dip"
+    />
+        
+    <RelativeLayout android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="32dip"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/image_downcount"
+        android:layout_toRightOf="@id/image_searchbar"
+        android:background="@drawable/edittext_margin_bg_normal" >
+        
+        <EditText
+         android:id="@+id/search_edittext"
+         android:layout_width="match_parent"
+         android:layout_height="32dip"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="10dip"
+         android:background="@android:color/transparent"
+         android:inputType="textNoSuggestions"
+         android:maxLength="40"
+         android:singleLine="true"
+         android:hint="@string/search_hint"
+         android:textColor="@color/search_edittext_color"
+         android:textColorHint="@color/search_edittext_hint_color"
+         android:textSize="@dimen/search_edittext_size" 
+         android:imeOptions="actionSearch" />
+        
+         <ImageView
+            android:id="@+id/search_bar_icon"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            tools:ignore="ContentDescription"
+            android:layout_centerVertical="true"
+        	android:layout_marginRight="7dip"
+        	android:layout_alignParentRight="true"
+            android:src="@drawable/searchbar_search"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>

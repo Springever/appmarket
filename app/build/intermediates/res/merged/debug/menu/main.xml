@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/item_feedback"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:icon="@drawable/menu_feedback"
+        android:title="@string/feed_back"/>
+
+    <item
+        android:id="@+id/item_setting"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:icon="@drawable/menu_setting"
+        android:title="@string/settings"/>
+    
+    <item
+        android:id="@+id/item_exit"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:icon="@drawable/menu_exit"
+        android:title="@string/exit"/>
+    
+</menu>

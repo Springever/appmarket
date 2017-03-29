@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.appmall.market.widget.RoundImageView android:id="@+id/image_view"
+        tools:ignore="ContentDescription" 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mid_banner_height"
+        android:layout_marginLeft="@dimen/common_list_marginx"
+        android:layout_marginRight="@dimen/common_list_marginx"
+        android:scaleType="fitXY" />
+
+    <View android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_view_divider_height"
+        android:layout_marginLeft="@dimen/common_list_marginx"
+        android:layout_marginRight="@dimen/common_list_marginx"
+        android:background="@color/mid_banner_shadow_bottom" />
+    
+</LinearLayout>

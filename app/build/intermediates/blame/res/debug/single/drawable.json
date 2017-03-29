@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\app_detail_pause_button_bg.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable\\app_detail_pause_button_bg.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\app_detail_resume_button_bg.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable\\app_detail_resume_button_bg.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_margin_bg.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable\\edittext_margin_bg.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_progress_pause_drawable.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable\\down_progress_pause_drawable.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\app_detail_delete_button_bg.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable\\app_detail_delete_button_bg.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_search.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable\\indicator_search.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_margin_bg_focus.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable\\edittext_margin_bg_focus.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_manage.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable\\indicator_manage.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ptr_refreshing_drawable.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable\\ptr_refreshing_drawable.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_app.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable\\indicator_app.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_margin_bg_normal.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable\\edittext_margin_bg_normal.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_promote.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable\\indicator_promote.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_progress_running_drawable.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable\\down_progress_running_drawable.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\small_loading_progress.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable\\small_loading_progress.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_game.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable\\indicator_game.xml"
+    }
+]

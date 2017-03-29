@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_layout_bg" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/top_bar_layout_color" >
+
+        <ImageView android:id="@+id/back_button"
+            tools:ignore="ContentDescription"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/top_bar_back_button_margin_left"
+            android:scaleType="center"
+            android:src="@drawable/top_bar_back_button_normal" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/feed_back"
+            android:textColor="@color/top_bar_title_text_color"
+            android:textSize="@dimen/top_bar_title_text_size" />
+
+        <View
+            android:id="@+id/top_bar_layout_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_layout_divider_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_activity_tabwidget_divider_color" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar_layout"
+        android:layout_marginTop="@dimen/setting_activity_group_margin_top"
+        android:layout_marginBottom="@dimen/setting_activity_group_margin_top"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/setting_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout android:id="@+id/rank_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/feedback_rank_layout_height"
+                android:layout_marginLeft="@dimen/feedback_hori_margin"
+                android:layout_marginRight="@dimen/feedback_hori_margin"
+                android:background="#ffffff"
+                android:paddingLeft="@dimen/feedback_content_padding"
+                android:paddingRight="@dimen/feedback_content_padding" >
+                
+                <TextView android:id="@+id/rank_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="@string/please_rank_my_app"
+                    android:textSize="@dimen/feedback_content_text_size"
+                    android:textColor="@color/feedback_content_text_color" />
+                
+                <TextView android:id="@+id/rank_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/rank_text_star_1"
+                    android:textSize="@dimen/feedback_rank_text_size"
+                    android:textColor="@color/feedback_rank_text_color"
+                    android:visibility="invisible" />
+                
+                <com.appmall.market.widget.RankStarWidget android:id="@+id/rank_star"
+                    android:layout_width="@dimen/feedback_rank_star_width"
+                    android:layout_height="@dimen/feedback_rank_star_height"
+                    android:layout_toLeftOf="@id/rank_text"
+                    android:layout_marginRight="@dimen/feedback_hori_margin"
+                    android:layout_centerVertical="true" />
+                
+            </RelativeLayout>
+            
+            <EditText android:id="@+id/feedback_editor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/feedback_editor_height"
+                android:layout_marginLeft="@dimen/feedback_hori_margin"
+                android:layout_marginRight="@dimen/feedback_hori_margin"
+                android:layout_marginTop="@dimen/setting_activity_group_margin_top"
+                android:maxLength="400"
+                android:background="@drawable/edittext_margin_bg"
+                android:padding="@dimen/feedback_content_padding"
+                android:gravity="top|left"
+                android:hint="@string/please_feedback"
+                android:textColorHint="@color/feedback_hint_color"
+                android:textSize="@dimen/feedback_content_text_size"
+                android:textColor="@color/feedback_content_text_color" />
+            
+            <EditText android:id="@+id/contact_address_editor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/feedback_contact_editor_height"
+                android:layout_marginLeft="@dimen/feedback_hori_margin"
+                android:layout_marginRight="@dimen/feedback_hori_margin"
+                android:layout_marginTop="@dimen/setting_activity_group_margin_top"
+                android:background="@drawable/edittext_margin_bg"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/feedback_content_padding"
+                android:paddingRight="@dimen/feedback_content_padding"
+                android:hint="@string/contact_address_options"
+                android:textColorHint="@color/feedback_hint_color"
+                android:textSize="@dimen/feedback_content_text_size"
+                android:textColor="@color/feedback_content_text_color" />
+            
+            <Button android:id="@+id/upload_feedback_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/feedback_upload_button_height"
+                android:layout_marginLeft="@dimen/feedback_upload_button_hori_margin"
+                android:layout_marginRight="@dimen/feedback_upload_button_hori_margin"
+                android:layout_marginTop="@dimen/setting_activity_group_margin_top"
+                android:text="@string/upload_feedback"
+                android:textSize="@dimen/feedback_upload_button_text_size"
+                android:textColor="@color/green_bg_text_color"
+                android:background="@drawable/btn_green_bg" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

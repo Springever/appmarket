@@ -1,0 +1,252 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_layout_bg" >
+    
+        <RelativeLayout
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/top_bar_layout_color" >
+
+        <ImageView android:id="@+id/back_button"
+            tools:ignore="ContentDescription"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/top_bar_back_button_margin_left"
+            android:scaleType="center"
+            android:src="@drawable/top_bar_back_button_normal"
+         />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_detail"
+            android:textColor="@color/top_bar_title_text_color"
+            android:textSize="@dimen/top_bar_title_text_size" />
+        
+       <ImageView 
+            android:id="@+id/top_bar_search"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:src="@drawable/search_logo"
+            android:layout_marginRight="12dip"
+            android:layout_marginLeft="10dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+        />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_layout_divider_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_activity_tabwidget_divider_color" />
+    </RelativeLayout>
+    
+        <RelativeLayout
+                android:id="@+id/app_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="96dip" 
+                android:layout_below="@id/top_bar_layout"
+                android:paddingTop="10dip"
+                android:paddingLeft="@dimen/common_list_marginx"
+                android:paddingRight="@dimen/common_list_marginx"
+                >
+
+                <com.appmall.market.widget.RoundImageView
+                    android:id="@+id/app_icon"
+                    android:layout_width="52dip"
+                    android:layout_height="52dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/common_item_icon_margin_left"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/default_app_icon"
+                    android:scaleType="fitXY" 
+                    />
+                
+				<RelativeLayout
+				    android:id="@+id/layout_appinfo"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_toRightOf="@id/app_icon"
+				    android:layout_marginRight="@dimen/app_detail_info_margin_left" >
+				    
+				    <TextView
+	                    android:id="@+id/app_title"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:ellipsize="end"
+	                    android:singleLine="true"
+	                    android:text="app_title"
+	                    android:layout_marginTop="-2dip"
+	                    android:textColor="@color/common_item_title_text_color"
+	                    android:textSize="@dimen/common_item_title_text_size" 
+	                />
+
+				   	<com.appmall.market.widget.RankStarWidget
+	                    android:id="@+id/star"
+	                    android:layout_width="@dimen/rank_star_widget_width"
+	                    android:layout_height="@dimen/rank_star_widget_height"
+	                    android:layout_below="@id/app_title"
+	                    android:layout_centerVertical="true"
+	                    android:layout_marginTop="2dip"
+		            />
+				   	
+				   	<TextView
+	                    android:id="@+id/app_info"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="3.7dip"
+	                    android:ellipsize="end"
+	                    android:singleLine="true"
+	                    android:layout_below="@id/star"
+	                    android:text="app_info"
+	                    android:textColor="@color/common_item_desc_text_color"
+	                    android:textSize="@dimen/common_item_desc_text_size" 
+	                />       
+				</RelativeLayout>
+				
+				<com.appmall.market.widget.DetailInfoLabelLinearLayout
+				    android:id="@+id/laeblgroup_layout"
+			   	    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" 
+				   	android:layout_below="@id/app_icon"
+	                android:layout_alignLeft="@id/app_icon"
+				/>
+
+            </RelativeLayout>
+            	<View 
+				    android:layout_width="fill_parent"
+		        	android:layout_height="1dip"
+		        	android:layout_below="@id/app_info_layout"
+		        	android:background="@color/common_divider_color"
+		        	android:layout_alignParentBottom="true"
+			    />
+    
+    <RelativeLayout
+        android:id="@+id/bottom_down_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_detail_bottom_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff">
+
+        <ImageView android:id="@+id/pause_button"
+            tools:ignore="ContentDescription" 
+            android:layout_width="@dimen/app_detail_bottom_bar_height"
+            android:layout_height="@dimen/app_detail_bottom_bar_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/app_detail_pause_button_bg"
+            android:scaleType="center"
+            android:visibility="invisible" />
+
+        <ImageView android:id="@+id/delete_button"
+            tools:ignore="ContentDescription" 
+            android:layout_width="@dimen/app_detail_bottom_bar_height"
+            android:layout_height="@dimen/app_detail_bottom_bar_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/app_detail_delete_button_bg"
+            android:scaleType="center"
+            android:visibility="invisible" />
+
+        <com.appmall.market.widget.DownStatusButton android:id="@+id/detail_progress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_detail_progress_height"
+            android:layout_marginLeft="@dimen/app_detail_progress_margin_left"
+            android:layout_marginRight="@dimen/app_detail_progress_margin_right"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_green_bg"
+            android:layout_toLeftOf="@id/delete_button"
+            android:layout_toRightOf="@id/pause_button" />
+    </RelativeLayout>
+    
+     <View
+         	android:id="@+id/line_app_info_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+			android:layout_below="@id/app_info_layout"
+			android:paddingLeft="@dimen/common_list_marginx"
+            android:paddingRight="@dimen/common_list_marginx"
+            android:background="@color/common_divider_color" />
+    
+    <TabHost
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/line_app_info_divider"
+    android:layout_above="@id/bottom_down_bar"
+    >
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" >
+	
+	        <TabWidget
+	            android:id="@android:id/tabs"
+	            android:layout_width="match_parent"
+	            android:layout_height="@dimen/sub_tab_indicator_height"
+	            android:background="@color/tab_widget_bg_color"
+	            android:layout_weight="0"
+	            android:orientation="horizontal" />
+	        	
+	        <com.appmall.market.widget.UnderlinePageIndicator
+	            android:id="@+id/indicator"
+	            android:layout_width="match_parent"
+	            android:layout_height="@dimen/tab_underline_page_indicator_height"
+	            android:background="#ffffff" />
+	        
+	       	<View 
+	            android:layout_width="match_parent"
+	            android:layout_height="1dip"
+	            android:background="@color/common_divider_color"
+	            android:scrollY="-1px"
+            />
+	
+	        <FrameLayout
+	            android:id="@android:id/tabcontent"
+	            android:layout_width="0dp"
+	            android:layout_height="0dp"
+	            android:layout_weight="0" />
+	
+	        <com.appmall.market.widget.HorizontalViewPager
+	            android:id="@+id/view_pager"
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1" />
+	    </LinearLayout> 
+	</TabHost>
+	
+    	<RelativeLayout
+    	    	android:id="@+id/layout_detail_viewpager"
+    	    	android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:visibility="gone"
+    	    >
+	        <android.support.v4.view.ViewPager
+			    android:id="@+id/viewpager_detail"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:background="#8e000000"			    
+	   		/>
+	        
+	       <com.appmall.market.widget.ViewPagerDot
+	       android:id="@+id/details_dot"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_alignParentBottom="true"
+	       android:layout_marginBottom="20dip"
+	       android:layout_centerHorizontal="true"
+	       android:background="@drawable/dot_bg"
+	       android:layout_gravity="center_horizontal"
+	       android:gravity="center_horizontal" 
+	       />
+       </RelativeLayout>
+       
+</RelativeLayout>

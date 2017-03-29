@@ -1,0 +1,325 @@
+<resources>
+    <!-- 详情顶部Bar -->
+    <dimen name="top_bar_height">41.33dp</dimen>
+    
+    <!-- Tab切换底部横条高度 -->
+    <dimen name="tab_underline_page_indicator_height">4dp</dimen>
+    
+	<!-- 子Tab -->
+    <dimen name="sub_tab_indicator_label_text_size">14.67sp</dimen>
+    <dimen name="sub_tab_indicator_height">38dp</dimen>
+
+	<!-- 主界面 -->
+    <dimen name="main_activity_tabwidget_height">50dp</dimen>
+	<dimen name="main_activity_tabwidget_divider_height">1px</dimen>
+	<dimen name="main_tab_indicator_icon_size">28dp</dimen>
+	<dimen name="main_tab_indicator_label_text_size">10.67sp</dimen>
+	<dimen name="main_tab_indicator_count_margin_top">2.33dp</dimen>
+    <dimen name="main_tab_indicator_count_margin_right">14dp</dimen>
+    <dimen name="main_tab_indicator_count_text_size">8sp</dimen>
+    <dimen name="home_advert_indicator_radius">3.33dp</dimen>
+    <dimen name="float_down_icon_size">41.33dp</dimen>
+    <dimen name="float_down_icon_margin_right">9.7dp</dimen>
+    <dimen name="float_down_icon_margin_bottom">8dp</dimen>
+    
+    <!-- 推送 -->
+    <dimen name="notication_icon_width">22dip</dimen>
+    <dimen name="notication_icon_height">22dip</dimen>
+    <dimen name="notication_icon_margin">10dip</dimen>
+    
+    <!-- 首页 -->
+    <dimen name="top_banner_height">127dp</dimen>
+    <dimen name="mid_banner_height">70dp</dimen>
+    <dimen name="top_banner_page_indicator_margin_bottom">6.67dp</dimen>
+    
+    <!-- 列表边距，以及divider定义 -->
+    <dimen name="list_view_margin_left">9.33dp</dimen>
+    <dimen name="list_view_margin_right">9.33dp</dimen>
+    <dimen name="list_view_margin_top">8dp</dimen>
+    <dimen name="list_view_margin_bottom">8dp</dimen>
+    <dimen name="list_view_divider_height">1px</dimen>
+    <dimen name="list_view_content_margin_left">12dp</dimen>
+    <dimen name="load_more_footer_height">49.33dp</dimen>
+    <dimen name="load_more_footer_text_size">12sp</dimen>
+    <dimen name="load_more_progress_bar_size">17.33dp</dimen>
+    <dimen name="loading_view_text_size">14.67sp</dimen>
+    <dimen name="loading_view_drawable_padding">13.33dp</dimen>
+    
+    <!-- 分类软件标题 -->
+    <dimen name="title_header_rect_width">3.33dp</dimen>
+    <dimen name="title_header_rect_height">17.33dp</dimen>
+    <dimen name="list_item_category_title_text_size">10.6sp</dimen>
+    <dimen name="list_item_category_title_height">29.3dp</dimen>
+    
+    <!-- 分类列表项 -->
+    <dimen name="list_item_category_item_height">56dp</dimen>
+    <dimen name="category_item_icon_size">34.67dp</dimen>
+    <dimen name="category_item_icon_margin_left">20dp</dimen>
+    <dimen name="category_item_icon_margin_right">12dp</dimen>
+    <dimen name="category_item_text_size">14.67sp</dimen>
+    <dimen name="list_item_category_advert_height">92dp</dimen>
+    <dimen name="list_item_remark_height">42.67dp</dimen>
+    <dimen name="remark_tetx_size">10.67sp</dimen>
+    
+    <!-- 评级软件列表 -->
+    <dimen name="list_item_rank_app_item_height">89.33dp</dimen>
+    <dimen name="list_item_rank_app_item_icon_size">42.6dp</dimen>
+    <dimen name="list_item_rank_app_item_content_margin_left">6dp</dimen>
+    <dimen name="list_item_rank_app_item_content_margin_right">6dp</dimen>
+    <dimen name="list_item_rank_app_item_icon_margin_right">10dp</dimen>
+    <dimen name="list_item_rank_app_item_text_margin_left">2.67dp</dimen>
+    <dimen name="list_item_rank_app_item_text_margin_top">2dp</dimen>
+    <dimen name="list_item_rank_app_item_label_text_size">16sp</dimen>
+    <dimen name="list_item_rank_app_item_desc_text_size">9.33sp</dimen>
+    <dimen name="list_item_rank_app_item_button_width">62.67dp</dimen>
+    <dimen name="list_item_rank_app_item_button_height">21.33dp</dimen>
+    <dimen name="list_item_rank_app_item_button_margin_top">4dp</dimen>
+    <dimen name="list_item_rank_app_item_button_wrapper_padding">4dp</dimen>
+    <dimen name="rank_star_widget_width">53.33dp</dimen>
+    <dimen name="rank_star_widget_height">10.67dp</dimen>
+    <dimen name="list_item_remark_padding_left">9.33dp</dimen>
+    <dimen name="list_item_remark_padding_right">9.33dp</dimen>
+    
+    <!-- 搜索界面 -->
+    <dimen name="search_top_layout_height">48dp</dimen>
+    <dimen name="search_edittext_margin_left">8dp</dimen>
+    <dimen name="search_edittext_margin_right">8dp</dimen>
+    <dimen name="search_button_margin_right">8dp</dimen>
+    <dimen name="search_edittext_height">30dp</dimen>
+    <dimen name="search_edittext_size">13.33sp</dimen>
+    <dimen name="clear_search_text_button_size">20dp</dimen>
+    <dimen name="next_row_button_margin_bottom">16dp</dimen>
+    <dimen name="next_row_button_width">98.67dp</dimen>
+    <dimen name="next_row_button_height">30.67dp</dimen>
+    <dimen name="next_row_button_text_size">17.33sp</dimen>
+    <dimen name="search_list_view_dividier_height">6dp</dimen>
+    <dimen name="association_keyword_height">42dp</dimen>
+    <dimen name="list_item_search_association_margin_left">12dp</dimen>
+    <dimen name="list_item_search_association_margin_right">12dp</dimen>
+    <dimen name="list_item_search_association_keyword_text_size">16sp</dimen>
+    
+    <!-- 水平评分软件列表 -->
+    <dimen name="list_item_hori_rank_app_height">64dp</dimen>
+    <dimen name="list_item_hori_rank_app_button_margin_right">10.67dp</dimen>
+    <dimen name="list_item_hori_rank_app_item_button_width">64dp</dimen>
+    <dimen name="list_item_hori_rank_app_item_button_height">23.33dp</dimen>
+    <dimen name="search_result_empty_text_size">13.33sp</dimen>
+    <dimen name="search_no_result_icon_padding">33.33dp</dimen>
+    <dimen name="list_item_category_advert_margin_right">6.67dp</dimen>
+    
+    <!-- 图标 -->
+    <dimen name="round_image_view_radius">2.67dp</dimen>
+    
+    <!-- 详情界面 -->
+    <dimen name="top_bar_back_button_margin_left">0dp</dimen>
+    <dimen name="top_bar_title_text_size">17.33sp</dimen>
+    <dimen name="top_bar_layout_divider_height">1px</dimen>
+    
+    <!-- 专题列表 -->
+    <dimen name="list_item_topic_item_height">78.67dp</dimen>
+    <dimen name="list_item_topic_item_margin_right">8dp</dimen>
+    <dimen name="list_item_topic_item_padding_bottom">10dp</dimen>
+    <dimen name="list_item_topic_item_hori_padding">4.67dp</dimen>
+    
+    <!-- 广告列表 -->
+    <dimen name="list_item_advert_height">56dp</dimen>
+    <dimen name="list_item_advert_icon_size">32dp</dimen>
+    <dimen name="list_item_advert_icon_margin_left">14.2dp</dimen>
+    <dimen name="list_item_advert_icon_margin_right">12dp</dimen>
+    <dimen name="list_item_advert_text_size">14.67sp</dimen>
+    
+    <!-- 下载列表 -->
+    <dimen name="list_item_down_app_progress_bar_height">6.67dp</dimen>
+    <dimen name="list_item_down_app_control_layout_height">24.67dp</dimen>
+    <dimen name="list_item_down_app_button_text_size">10.67sp</dimen>
+    <dimen name="list_item_down_app_progress_bar_margin_top">2.67dp</dimen>
+    <dimen name="list_item_down_app_progress_bar_margin_right">6.67dp</dimen>
+    <dimen name="list_item_down_app_desc_text_margin_top">2.67dp</dimen>
+    
+    <!-- 软件详情界面 -->
+    <dimen name="app_detail_bottom_bar_height">48dp</dimen>
+    <dimen name="app_detail_progress_height">33.33dp</dimen>
+    <dimen name="app_detail_progress_margin_left">14dp</dimen>
+    <dimen name="app_detail_progress_margin_right">14dp</dimen>
+    <dimen name="app_detail_info_layout_height">58dp</dimen>
+    <dimen name="app_detail_icon_size">46.67dp</dimen>
+    <dimen name="app_detail_info_margin_left">14.67dp</dimen>
+    <dimen name="app_detail_update_time_margin_left">30dp</dimen>
+    <dimen name="app_detail_safe_tip_drawable_padding">2.67dp</dimen>
+    <dimen name="safe_tip_text_size">10sp</dimen>
+    <dimen name="app_detail_safe_tip_height">30.67dp</dimen>
+    <dimen name="app_detail_thumbnail_height">234dp</dimen>
+    <dimen name="app_detail_thumbnail_padding_top">8.67dp</dimen>
+    <dimen name="app_detail_thumbnail_padding_bottom">8.67dp</dimen>
+    <dimen name="app_detail_thumbnail_inner_padding">2.67dp</dimen>
+    <dimen name="app_detail_thumbnail_width">128.67dp</dimen>
+    <dimen name="app_detail_content_margin_left">5.33dp</dimen>
+    <dimen name="app_desc_header_rect_margin_top">12dp</dimen>
+    <dimen name="app_desc_title_margin_top">12dp</dimen>
+    <dimen name="app_detail_desc_margin_top">12dp</dimen>
+    <dimen name="app_detail_desc_text_size">12sp</dimen>
+    <dimen name="app_detail_desc_margin_bottom">13.33dp</dimen>
+    <dimen name="app_detail_rank_star_width">128dp</dimen>
+    <dimen name="app_detail_rank_star_height">22dp</dimen>
+    <dimen name="app_detail_rank_text_size">13.33sp</dimen>
+    <dimen name="app_detail_ding_text_margin_left">4dp</dimen>
+    <dimen name="app_detail_ding_text_size">12sp</dimen>
+    <dimen name="app_detail_rank_button_height">22dp</dimen>
+    <dimen name="app_detail_rank_button_margin_top">22dp</dimen>
+    <dimen name="app_detail_rank_button_text_size">12sp</dimen>
+    <dimen name="app_detail_big_star_margin">4dp</dimen>
+    <dimen name="app_detail_rank_star_text_margin_left">4dp</dimen>
+    
+    <!-- 专题详情界面 -->
+    <dimen name="topic_detail_desc_text_size">10.67sp</dimen>
+    <dimen name="load_more_list_view_text_margin_left">13.33dp</dimen>
+    <dimen name="topic_detail_desc_margin_bottom">10dp</dimen>
+    
+    <!-- 更新界面 -->
+    <dimen name="list_item_update_desc_text_size">10sp</dimen>
+    <dimen name="list_item_cancel_ignore_item_button_width">69.3dp</dimen>
+    <dimen name="lite_item_update_group_height">27.5dp</dimen>
+    <dimen name="lite_item_update_group_arrow_margin_right">10dp</dimen>
+    <dimen name="lite_item_update_group_title_margin_left">10dp</dimen>
+    <dimen name="lite_item_update_group_title_text_size">12sp</dimen>
+    <dimen name="manage_update_expandable_list_margin_top">2.67dp</dimen>
+    <dimen name="manage_update_expandable_list_margin_bottom">2.67dp</dimen>
+    
+    <!-- 载入失败 -->
+    <dimen name="failed_layout_result_text_size">17.33sp</dimen>
+    <dimen name="failed_layout_tip_text_size">12sp</dimen>
+    <dimen name="failed_layout_tip_margin_top">80dp</dimen>
+    <dimen name="failed_layout_tip_button_width">138.67dp</dimen>
+    <dimen name="failed_layout_tip_button_height">30.67dp</dimen>
+    <dimen name="failed_tip_button_margin_top">10dp</dimen>
+    <dimen name="main_loading_size">43.33dp</dimen>
+    
+    <!-- 设置项 -->
+    <dimen name="setting_item_height">48.67dp</dimen>
+    <dimen name="setting_item_hori_margin">13.33dp</dimen>
+    <dimen name="setting_item_title_text_size">14.67sp</dimen>
+    <dimen name="setting_item_description_text_size">10.67sp</dimen>
+    <dimen name="setting_item_checkbox_size">22dp</dimen>
+    <dimen name="setting_activity_exit_button_width">284.67dp</dimen>
+    <dimen name="setting_activity_exit_button_height">36dp</dimen>
+    <dimen name="setting_activity_exit_button_text_size">16sp</dimen>
+    <dimen name="setting_activity_group_margin_top">10dp</dimen>
+    
+    <!-- 反馈页面 -->
+    <dimen name="feedback_rank_layout_height">37.33dp</dimen>
+    <dimen name="feedback_hori_margin">9.33dp</dimen>
+    <dimen name="feedback_content_padding">10dp</dimen>
+    <dimen name="feedback_content_text_size">13.33sp</dimen>
+    <dimen name="feedback_rank_star_width">126.67dp</dimen>
+    <dimen name="feedback_rank_star_height">20.67dp</dimen>
+    <dimen name="feedback_rankstar_margin">4dp</dimen>
+    <dimen name="feedback_editor_height">144dp</dimen>
+    <dimen name="feedback_contact_editor_height">37.33dp</dimen>
+    <dimen name="feedback_upload_button_height">37.33dp</dimen>
+    <dimen name="feedback_upload_button_text_size">16sp</dimen>
+    <dimen name="feedback_upload_button_hori_margin">18dp</dimen>
+    <dimen name="feedback_rank_text_size">12sp</dimen>
+    
+    <!-- 关于界面 -->
+    <dimen name="about_large_logo_title_size">18.67sp</dimen>
+    <dimen name="about_large_logo_version_size">13.33sp</dimen>
+    <dimen name="large_logo_title_margin_top">164dp</dimen>
+    <dimen name="about_check_update_height">33.33dp</dimen>
+    <dimen name="about_check_update_margin_top">33.33dp</dimen>
+    <dimen name="about_check_update_width">148dp</dimen>
+    <dimen name="about_check_update_text_size">16.67sp</dimen>
+    <dimen name="copyright_layout_margin_bottom">17.33dp</dimen>
+    <dimen name="about_copyright_text_size">12sp</dimen>
+    <dimen name="term_content_text_size">12sp</dimen>
+    <dimen name="term_content_padding">9.33dp</dimen>
+    <dimen name="term_activity_loading_progress_margin_right">12dp</dimen>
+    
+    <!-- 欢迎界面 -->
+    <dimen name="welcome_hori_padding">9.33dp</dimen>
+    <dimen name="welcome_title_margin_top">22dp</dimen>
+    <dimen name="welcome_title_size">20sp</dimen>
+    <dimen name="welcome_divider_hori_margin">20dp</dimen>
+    <dimen name="user_agree_checkbox_margin_right">8dp</dimen>
+    <dimen name="user_agree_text_size">12sp</dimen>
+    <dimen name="welcome_ensure_button_width">148dp</dimen>
+    <dimen name="welcome_ensure_button_height">38.67dp</dimen>
+    <dimen name="ensure_button_text_size">16.67sp</dimen>
+    <dimen name="welcome_vertical_margin">13.33dp</dimen>
+    <dimen name="welcome_text_margin_top">26dp</dimen>
+    
+    <!-- 通用对话框 -->
+    <dimen name="dialog_width">226.67dp</dimen>
+    <dimen name="dialog_title_height">32dp</dimen>
+    <dimen name="dialog_title_text_size">12.4sp</dimen>
+    <dimen name="dialog_message_margin">12dp</dimen>
+    <dimen name="dialog_message_text_size">10.67sp</dimen>
+    <dimen name="dialog_button_height">32dp</dimen>
+    <dimen name="dialog_button_text_size">13.33sp</dimen>
+    <dimen name="dialog_checkbox_size">16.67dp</dimen>
+    <dimen name="dialog_checkbox_text_size">10.67sp</dimen>
+    <dimen name="dialog_checkbox_margin_top">14.67dp</dimen>
+    <dimen name="dialog_checkbox_margin_left">8dp</dimen>
+       
+    
+    
+    <dimen name="common_item_title_text_size">16sp</dimen>
+    <dimen name="common_item_desc_text_size">12.67sp</dimen>
+    <dimen name="common_button_text_size">10.67sp</dimen>
+    <dimen name="common_button_corner_text_size">10.6sp</dimen>
+    <dimen name="common_bar_text_size">16sp</dimen>
+    <dimen name="detail_desc_text_size">14sp</dimen>
+    
+    
+    <dimen name="common_bar_height">33dip</dimen>
+    <dimen name="common_list_marginx">8dip</dimen>
+    <dimen name="common_divideline_margin">16dip</dimen>
+    
+    <dimen name="common_item_two_column_height">98.5dip</dimen>
+    <dimen name="common_item_one_column_height">71dip</dimen>
+    <dimen name="common_item_title_margin_left">10.5dip</dimen>
+    <dimen name="common_item_title_margin_top">10dip</dimen>
+    <dimen name="common_item_icon_margin_left">8dip</dimen>
+    <dimen name="common_item_icon_margin_right">8dip</dimen>
+    <dimen name="common_item_icon_size">48dp</dimen>  
+    
+    <dimen name="common_button_rect_width">56dip</dimen>
+    <dimen name="common_button_rect_height">24dip</dimen>
+    <dimen name="manage_common_button_rect_height">32dip</dimen>
+    
+    <dimen name="corner_label_margin_right">-7.5dip</dimen>
+    <dimen name="corner_label_margin_top">-8.5dip</dimen>
+    
+    <!-- 下载管理菜单 -->
+    <dimen name="down_app_manage_context_menu_width">80dp</dimen>
+    <dimen name="down_app_manage_context_menu_height">40dp</dimen>
+    <dimen name="down_app_manage_context_menu_text_size">14.67sp</dimen>
+    <dimen name="down_app_manage_context_menu_bg_padding">5.33dp</dimen>
+    
+    <dimen name="list_item_update_tip_text_size">12sp</dimen>
+    <dimen name="list_item_update_info_arrow_padding">8dp</dimen>
+    
+    <!-- 搜索界面 -->
+    <dimen name="search_button_size">30dp</dimen>
+    <dimen name="next_row_button_margin_vertical">25.33dp</dimen>
+    <dimen name="list_item_search_text_padding_vertical">8dp</dimen>
+    <dimen name="list_item_search_advert_padding_vertical">12dp</dimen>
+    <dimen name="list_item_search_text_size">13.33sp</dimen>
+    <dimen name="list_item_search_tip_text_size">10.67sp</dimen>
+    <dimen name="list_item_search_tip_margin_left">12dp</dimen>
+    <dimen name="list_item_search_tip_margin_top">6dp</dimen>
+    <dimen name="list_item_search_tip_margin_bottom">4.67dp</dimen>
+    <dimen name="keyword_layout_height">188.67dp</dimen>
+    <dimen name="keyword_layout_margin_hori">8.67dp</dimen>
+    <dimen name="list_item_search_advert_margin_right">4dp</dimen>
+    
+    <dimen name="anim_icon_offset_y">20dp</dimen>
+    <dimen name="update_list_item_height">70dip</dimen>
+    <dimen name="notification_icon_margin_left">4.6dip</dimen>
+    <dimen name="notification_icon_margin_right">6dip</dimen>
+    
+    <dimen name="app_noti_icon_margin_left">8.0dip</dimen>
+    <dimen name="app_noti_icon_margin_right">12.0dip</dimen>
+    <dimen name="app_noti_icon_size">48.0dip</dimen>
+    <dimen name="app_noti_icon_margin">3.0dip</dimen>
+    
+</resources>

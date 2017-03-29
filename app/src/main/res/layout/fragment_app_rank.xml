@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:PullToRefresh="http://schemas.android.com/apk/res/com.appmall.market"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_layout_bg" >
+    
+    <com.appmall.market.widget.PullToRefreshXListView
+        android:id="@+id/ptr_listview" 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@android:color/transparent"
+		android:listSelector="@android:color/transparent"
+		android:indicatorLeft="0dp"
+		android:groupIndicator="@null"
+		android:childDivider="@color/common_divider_color"
+		android:divider="@null"
+		android:footerDividersEnabled="false"
+		PullToRefresh:ptrAnimationStyle="flip"
+		PullToRefresh:ptrHeaderTextAppearance="@style/pull_to_refresh_text_appearance"
+	/>
+    
+    <include android:id="@+id/loading_layout"
+        layout="@layout/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    <include android:id="@+id/loading_failed_layout"
+        layout="@layout/loading_failed_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    
+</RelativeLayout>

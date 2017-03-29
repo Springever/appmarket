@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	>
+
+    <com.appmall.market.widget.AutoSwitchViewPager android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_banner_height" />
+    
+    <com.appmall.market.widget.CirclePageIndicator android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/top_banner_page_indicator_margin_bottom" />
+    
+</RelativeLayout>

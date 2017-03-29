@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/common_list_marginx"
+    android:paddingRight="@dimen/common_list_marginx">
+    
+	<RelativeLayout android:id="@+id/content_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/lite_item_update_group_height"
+	    android:background="#f1f1f1" >
+	
+	    <TextView
+	        android:id="@+id/group_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:singleLine="true"
+	        android:ellipsize="middle"
+	        android:background="@android:color/transparent"
+	        android:textSize="@dimen/common_bar_text_size"
+	        android:textColor="#aaaaaa" />
+	    
+	</RelativeLayout>
+	
+	<View android:id="@+id/empty_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:visibility="gone" />
+	
+</FrameLayout>

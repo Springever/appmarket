@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/common_list_marginx"
+    android:paddingRight="@dimen/common_list_marginx">
+    
+	<RelativeLayout android:id="@+id/content_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="33.7dip"
+	    android:background="#ffffff" >
+	    
+	    <RelativeLayout
+	        android:id="@+id/layout_group_button"
+	       	android:layout_width="wrap_content"
+	    	android:layout_height="fill_parent"
+	    	android:layout_centerVertical="true"
+	    	android:layout_marginRight="8dip"
+	    	android:layout_alignParentRight="true"
+	    	android:visibility="gone"
+	   	>
+	        <ImageView
+	            android:id="@+id/image_group_button"
+	            android:layout_width="17.7dip"
+	    		android:layout_height="17.7dip"
+	    		android:layout_centerVertical="true"
+	    		android:src="@drawable/clean_package"
+	        />
+	        <TextView 
+	            android:id="@+id/title_group_button"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_toRightOf="@id/image_group_button"
+	    		android:textColor="#aaaaaa"
+	    		android:textSize="12sp"
+	    		android:text="@string/one_key_clean"
+	    		android:layout_centerInParent="true"
+	        />
+	        
+	    </RelativeLayout>
+	        
+	
+	    <TextView
+	        android:id="@+id/group_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:singleLine="true"
+	        android:ellipsize="middle"
+	        android:background="@android:color/transparent"
+	        android:textSize="@dimen/common_bar_text_size"
+	        android:textColor="#aaaaaa" />
+	    	    <View
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:paddingLeft="@dimen/common_divideline_margin"
+		        android:paddingRight="@dimen/common_divideline_margin"
+		        android:background="@color/common_divider_color"
+		        android:layout_alignParentBottom="true"
+	   			/>
+	</RelativeLayout>
+	
+	<View android:id="@+id/empty_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:visibility="gone" />
+	
+</FrameLayout>

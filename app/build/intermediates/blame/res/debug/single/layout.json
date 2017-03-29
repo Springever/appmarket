@@ -1,0 +1,242 @@
+[
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_top_banner.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_top_banner.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_space_category_title.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_space_category_title.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_search.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_search.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_layout.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\dialog_layout.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_download_group.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_download_group.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_app_rank.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\fragment_app_rank.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_search_association.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_search_association.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_tab_indicator.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\main_tab_indicator.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_manage_update.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\fragment_manage_update.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manage_download.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\activity_manage_download.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\loading_failed_layout.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\loading_failed_layout.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_category_detail.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\activity_category_detail.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_detail_comment.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\fragment_detail_comment.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_topic_detail.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\activity_topic_detail.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_detail.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\activity_detail.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\activity_about.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_search.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\activity_search.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_promote.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\activity_promote.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_detail_info.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\fragment_detail_info.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_advert.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_advert.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_hori_time_app.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_hori_time_app.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\app_recommend_layout.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\app_recommend_layout.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_commentpost.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\activity_commentpost.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_topic_item.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_topic_item.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_app_category.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\fragment_app_category.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\comment_list_header.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\comment_list_header.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_promote_bibei.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\fragment_promote_bibei.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_topic_header.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_topic_header.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_icon_layout.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\notification_icon_layout.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_manage_local.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\fragment_manage_local.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\search_bar_layout.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\search_bar_layout.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_detail_comment.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_detail_comment.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\setting_item_layout.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\setting_item_layout.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_hori_rank_app.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_hori_rank_app.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\down_app_manage_context_menu.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\down_app_manage_context_menu.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_picture_detail.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\activity_picture_detail.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_mid_banner.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_mid_banner.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_search_association_app.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_search_association_app.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_home_app.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_home_app.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_feedback.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\activity_feedback.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_promote_hot.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\fragment_promote_hot.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\sub_tab_indicator.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\sub_tab_indicator.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_setting.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\fragment_setting.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_category_title.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_category_title.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_term.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\activity_term.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_update_group.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_update_group.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_category_item.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_category_item.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_update.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_update.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_local_app.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_local_app.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\load_more_footer.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\load_more_footer.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_down_app.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_down_app.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\loading_layout.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\loading_layout.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_category_advert.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_category_advert.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_ignore.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_ignore.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_search_advert.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\list_item_search_advert.xml"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_app_newprod.xml",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\layout\\fragment_app_newprod.xml"
+    }
+]

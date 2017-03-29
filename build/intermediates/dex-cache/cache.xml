@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\software\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="D:\software\Android\AndroidStudioProjects\appmarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-19.1.0_be22657d576ef8fcbc5a2070b6a840c9da43f252\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\software\Android\AndroidStudioProjects\appmarket\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="733361b58f1853b9a9eec76a3d5a94d1c8bf7684">
+        <dex dex="D:\software\Android\AndroidStudioProjects\appmarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_fa2452ba1b17ca71ab44efc60aadc74488985a79\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\software\Android\AndroidStudioProjects\appmarket\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="89f95ba0e4015cd38ac4bd7b217d798e773d84dd">
+        <dex dex="D:\software\Android\AndroidStudioProjects\appmarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_8f79d1bbef4df9aabf13168f3d7603e4c4f08838\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\software\Android\AndroidStudioProjects\appmarket\app\libs\apk-merge-0.0.1-SNAPSHOT.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="107790ab9749de1c903a0cc005e82d86a0e9c810">
+        <dex dex="D:\software\Android\AndroidStudioProjects\appmarket\app\build\intermediates\transforms\dex\debug\folders\1000\2\apk-merge-0.0.1-SNAPSHOT_4b11e41c614e1a99f2938a5af08baa56f2c36dcd\classes.dex" />
+    </item>
+
+</items>

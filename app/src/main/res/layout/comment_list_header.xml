@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    
+    	    <RelativeLayout
+	            android:id="@+id/layout_comment_head_right"
+		        android:layout_width="210dip"
+		        android:layout_height="wrap_content"
+		       	android:layout_marginBottom="14.2dip"
+		       	android:layout_marginRight="18dip"
+				android:layout_marginTop="21.3dip"
+				android:layout_alignParentRight="true"
+		     >
+	     		<RelativeLayout
+	     		    android:id="@+id/layout_star_five"
+	     			android:layout_width="fill_parent"
+		        	android:layout_height="18.4dip"
+		       	>
+		       		<TextView
+		       		    android:id="@+id/text_star_five"
+		       		    android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		        		android:layout_marginRight="9.7dip"
+		        		android:layout_centerVertical="true"
+		        		android:text="5星"
+		        		android:gravity="center_vertical"
+		        		android:textColor="@color/common_item_title_text_color"
+		        		android:textSize="14sp"
+		       		/>
+		       		
+		       		<View
+		       		    android:id="@+id/view_star_five_bar"
+		       		    android:layout_width="180dip"
+		        		android:layout_height="fill_parent"
+		        		android:layout_centerVertical="true"
+		        		android:layout_toRightOf="@id/text_star_five"
+		        		android:background="#cccccc"
+		       		/>
+		       		
+		       		<View
+		       		    android:id="@+id/view_star_five_progress"
+		       		    android:layout_width="0dip"
+		        		android:layout_height="fill_parent"
+		        		android:layout_centerVertical="true"
+		        		android:layout_toRightOf="@id/text_star_five"
+		        		android:background="#3fc6a8"
+		       		/>
+		       		
+		       		<TextView
+		       		    android:id="@+id/view_star_five_text"
+		       		    android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		       		    android:text="0"
+		       		    android:textColor="#ffffff"
+		       		    android:textSize="12sp"
+		       		    android:layout_centerVertical="true"
+		       		    android:layout_marginRight="5dip"
+		       		    android:layout_alignRight="@id/view_star_five_bar"    		    
+		       		 />
+	     		    
+	     		</RelativeLayout>
+	     		
+	     		<RelativeLayout
+	     		    android:id="@+id/layout_star_four"
+	     			android:layout_width="fill_parent"
+					android:layout_height="18.4dip"
+					android:layout_marginTop="3.5dip"
+		        	android:layout_below="@id/layout_star_five"
+		       	>
+		       		<TextView
+		       		    android:id="@+id/text_star_four"
+		       		    android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		        		android:layout_marginRight="9.7dip"
+		        		android:layout_centerVertical="true"
+		        		android:text="4星"
+		        		android:gravity="center_vertical"
+		        		android:textColor="@color/common_item_title_text_color"
+		        		android:textSize="14sp"
+		       		/>
+		       		
+		       		<View
+		       		    android:id="@+id/view_star_four_bar"
+		       		    android:layout_width="180dip"
+		        		android:layout_height="fill_parent"
+		        		android:layout_centerVertical="true"
+		        		android:layout_toRightOf="@id/text_star_four"
+		        		android:background="#cccccc"
+		       		/>
+		       		
+		       		<View
+		       		    android:id="@+id/view_star_four_progress"
+		       		    android:layout_width="0dip"
+		        		android:layout_height="fill_parent"
+		        		android:layout_centerVertical="true"
+		        		android:layout_toRightOf="@id/text_star_four"
+		        		android:background="#3fc6a8"
+		       		/>
+		       		
+		       		<TextView
+		       		    android:id="@+id/view_star_four_text"
+		       		    android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		       		    android:text="0"
+		       		    android:textColor="#ffffff"
+		       		    android:textSize="12sp"
+		       		    android:layout_centerVertical="true"
+		       		    android:layout_marginRight="5dip"
+		       		    android:layout_alignRight="@id/view_star_four_bar"    		    
+		       		 />
+	     		    
+	     		</RelativeLayout>
+	     		
+	     		<RelativeLayout
+	     		    android:id="@+id/layout_star_three"
+	     			android:layout_width="fill_parent"
+		        	android:layout_height="18.4dip"
+		        	android:layout_marginTop="3.5dip"
+		        	android:layout_below="@id/layout_star_four"
+		       	>
+		       		<TextView
+		       		    android:id="@+id/text_star_three"
+		       		    android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		        		android:layout_marginRight="9.7dip"
+		        		android:layout_centerVertical="true"
+		        		android:text="3星"
+		        		android:gravity="center_vertical"
+		        		android:textColor="@color/common_item_title_text_color"
+		        		android:textSize="14sp"
+		       		/>
+		       		
+		       		<View
+		       		    android:id="@+id/view_star_three_bar"
+		       		    android:layout_width="180dip"
+		        		android:layout_height="fill_parent"
+		        		android:layout_centerVertical="true"
+		        		android:layout_toRightOf="@id/text_star_three"
+		        		android:background="#cccccc"
+		       		/>
+		       		
+		       		<View
+		       		    android:id="@+id/view_star_three_progress"
+		       		    android:layout_width="0dip"
+		        		android:layout_height="fill_parent"
+		        		android:layout_centerVertical="true"
+		        		android:layout_toRightOf="@id/text_star_three"
+		        		android:background="#3fc6a8"
+		       		/>
+		       		
+		       		<TextView
+		       		    android:id="@+id/view_star_three_text"
+		       		    android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		       		    android:text="0"
+		       		    android:textColor="#ffffff"
+		       		    android:textSize="12sp"
+		       		    android:layout_centerVertical="true"
+		       		    android:layout_marginRight="5dip"
+		       		    android:layout_alignRight="@id/view_star_three_bar"    		    
+		       		 />
+	     		    
+	     		</RelativeLayout>
+	     		
+	     		<RelativeLayout
+	     		    android:id="@+id/layout_star_two"
+	     			android:layout_width="fill_parent"
+		        	android:layout_height="18.4dip"
+		        	android:layout_marginTop="3.5dip"
+		        	android:layout_below="@id/layout_star_three"
+		       	>
+		       		<TextView
+		       		    android:id="@+id/text_star_two"
+		       		    android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		        		android:layout_marginRight="9.7dip"
+		        		android:layout_centerVertical="true"
+		        		android:text="2星"
+		        		android:gravity="center_vertical"
+		        		android:textColor="@color/common_item_title_text_color"
+		        		android:textSize="14sp"
+		       		/>
+		       		
+		       		<View
+		       		    android:id="@+id/view_star_two_bar"
+		       		    android:layout_width="180dip"
+		        		android:layout_height="fill_parent"
+		        		android:layout_centerVertical="true"
+		        		android:layout_toRightOf="@id/text_star_two"
+		        		android:background="#cccccc"
+		       		/>
+		       		
+		       		<View
+		       		    android:id="@+id/view_star_two_progress"
+		       		    android:layout_width="0dip"
+		        		android:layout_height="fill_parent"
+		        		android:layout_centerVertical="true"
+		        		android:layout_toRightOf="@id/text_star_two"
+		        		android:background="#3fc6a8"
+		       		/>
+		       		
+		       		<TextView
+		       		    android:id="@+id/view_star_two_text"
+		       		    android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		       		    android:text="0"
+		       		    android:textColor="#ffffff"
+		       		    android:textSize="12sp"
+		       		    android:layout_centerVertical="true"
+		       		    android:layout_marginRight="5dip"
+		       		    android:layout_alignRight="@id/view_star_two_bar"    		    
+		       		 />
+	     		    
+	     		</RelativeLayout>
+	     		
+	     		<RelativeLayout
+	     		    android:id="@+id/layout_star_one"
+	     			android:layout_width="fill_parent"
+		        	android:layout_height="18.4dip"
+		        	android:layout_marginTop="3.5dip"
+		        	android:layout_below="@id/layout_star_two"
+		       	>
+		       		<TextView
+		       		    android:id="@+id/text_star_one"
+		       		    android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		        		android:layout_marginRight="9.7dip"
+		        		android:layout_centerVertical="true"
+		        		android:text="1星"
+		        		android:gravity="center_vertical"
+		        		android:textColor="@color/common_item_title_text_color"
+		        		android:textSize="14sp"
+		       		/>
+		       		
+		       		<View
+		       		    android:id="@+id/view_star_one_bar"
+		       		    android:layout_width="180dip"
+		        		android:layout_height="fill_parent"
+		        		android:layout_centerVertical="true"
+		        		android:layout_toRightOf="@id/text_star_one"
+		        		android:background="#cccccc"
+		       		/>
+		       		
+		       		<View
+		       		    android:id="@+id/view_star_one_progress"
+		       		    android:layout_width="0dip"
+		        		android:layout_height="fill_parent"
+		        		android:layout_centerVertical="true"
+		        		android:layout_toRightOf="@id/text_star_one"
+		        		android:background="#3fc6a8"
+		       		/>
+		       		
+		       		<TextView
+		       		    android:id="@+id/view_star_one_text"
+		       		    android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		       		    android:text="0"
+		       		    android:textColor="#ffffff"
+		       		    android:textSize="12sp"
+		       		    android:layout_centerVertical="true"
+		       		    android:layout_marginRight="5dip"
+		       		    android:layout_alignRight="@id/view_star_one_bar"    		    
+		       		 />
+	     		    
+	     		</RelativeLayout>	     		
+	         </RelativeLayout>
+	                          	          
+	        <RelativeLayout
+	            android:id="@+id/layout_comment_head_left"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+				android:layout_marginTop="21.3dip"
+				android:layout_alignParentLeft="true"
+				android:layout_toLeftOf="@id/layout_comment_head_right"
+				android:layout_marginBottom="16.4dip"				
+		     >
+	     		<TextView 
+	     		    	android:id="@+id/text_average_title"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:textSize="14sp"
+				        android:layout_marginTop="5.3dip"
+				        android:layout_centerHorizontal="true"
+	     		    	android:text="平均得分"/>
+	     		
+	     		<TextView 
+	     		    	android:id="@+id/text_average_value"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/text_average_title"
+				        android:layout_marginTop="8.3dip"
+				        android:layout_centerHorizontal="true"
+	     		    	android:text="0"
+	     		    	android:textSize="19.5sp"
+	     		    	android:textColor="#3fc6a8"/>
+	     		
+	     		<com.appmall.market.widget.RankStarWidget
+	                    android:id="@+id/star_average_value"
+	                    android:layout_below="@id/text_average_value"
+	                    android:layout_marginTop="8.3dip"
+	                    android:layout_centerHorizontal="true"
+	                    android:clickable="false"
+	                    android:layout_width="@dimen/rank_star_widget_width"
+	                    android:layout_height="@dimen/rank_star_widget_height"/>
+	     		<TextView
+	                    android:id="@+id/total_vote_value"
+	                    android:layout_below="@id/star_average_value"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerHorizontal="true"
+	                    android:layout_marginTop="8.3dip"
+	                    android:textSize="16sp"
+	                    android:text="0人"/>
+	            
+            </RelativeLayout>
+            
+	         
+	        <TextView 
+	            android:id="@+id/button_detail_comment"
+	         	android:layout_width="292dip"
+	       		android:layout_height="29.3dip"
+	       		android:layout_marginTop="14.2dip"
+	       		android:layout_centerHorizontal="true"
+	       		android:gravity="center"
+	       		android:text="我要评论"
+	       		android:textColor="@color/common_item_title_text_color"
+	       		android:textSize="14sp"
+	       		android:layout_below="@id/layout_comment_head_right"
+	       		android:background="@drawable/edittext_margin_bg_normal"
+	       		android:layout_marginBottom="15.1dip"
+        	/>
+	        
+	        <View
+	            android:layout_width="fill_parent"
+	       		android:layout_height="1px"
+	       		android:layout_below="@id/button_detail_comment"          
+	            />
+        
+      </RelativeLayout>

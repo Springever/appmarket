@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+    
+    <TextView android:id="@+id/failed_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawablePadding="@dimen/loading_view_drawable_padding"
+        android:drawableTop="@drawable/no_available_connection"
+        android:gravity="center"
+        android:text="@string/network_not_good"
+        android:textColor="@color/failed_layout_result_text_color"
+        android:textSize="@dimen/failed_layout_result_text_size" />
+
+    <TextView android:id="@+id/failed_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/failed_layout_tip_margin_top"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:textSize="@dimen/failed_layout_tip_text_size"
+        android:textColor="@color/failed_layout_tip_text_color"
+        android:text="@string/click_button_refresh_later" />
+    
+    <Button android:id="@+id/failed_tip_button"
+        android:layout_width="@dimen/failed_layout_tip_button_width"
+        android:layout_height="@dimen/failed_layout_tip_button_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/failed_tip_button_margin_top"
+        android:background="@drawable/btn_green_bg"
+        android:textSize="@dimen/failed_layout_result_text_size"
+        android:textColor="@color/green_bg_text_color"
+        android:text="@string/click_to_refresh" />
+    
+</LinearLayout>

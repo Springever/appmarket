@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    
+    <ScrollView
+        android:id="@+id/detailInfo_scroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+        <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent">
+           <com.appmall.market.widget.HorizontalScrollerGallery
+                android:id="@+id/thumbnail_scroller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:fillViewport="true"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/thumbnail_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/app_detail_thumbnail_padding_bottom"
+                    android:paddingRight="@dimen/app_detail_content_margin_left"
+                    android:paddingTop="@dimen/app_detail_thumbnail_padding_top" />
+            </com.appmall.market.widget.HorizontalScrollerGallery>
+            
+           <RelativeLayout
+               android:id="@+id/layout_detail_info"
+               android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_marginTop="10dip"
+	           android:layout_below="@id/thumbnail_scroller">
+                     
+                      	<LinearLayout
+			               android:id="@+id/layout_line1"
+			               android:layout_width="match_parent"
+				           android:layout_height="wrap_content"
+				           android:orientation="horizontal"
+				           android:paddingLeft="@dimen/common_list_marginx"
+				           android:paddingRight="@dimen/common_list_marginx">
+				           
+                      	   <LinearLayout
+				               android:layout_width="match_parent"
+					           android:layout_height="wrap_content"
+					           android:layout_weight="1"
+					        >
+                               <TextView
+				                    android:layout_width="wrap_content"
+					           		android:layout_height="wrap_content" 
+				                   	android:text="版本："
+				                    android:textColor="@color/dark_bg_text_color"
+				                    android:textSize="@dimen/detail_desc_text_size" 
+				               />
+				               <TextView
+				                   android:id="@+id/text_content_appversion"
+				                    android:layout_width="wrap_content"
+					           		android:layout_height="wrap_content" 
+					           		android:layout_marginLeft="3dip"
+				                   	android:text=""
+				                   	android:singleLine="true"
+				                   	android:ellipsize="end"
+				                    android:textColor="@color/dark_bg_text_color"
+				                    android:textSize="@dimen/detail_desc_text_size" 
+				               />				                                             
+				           </LinearLayout>
+				           
+                      	   <LinearLayout
+				               android:layout_width="match_parent"
+					           android:layout_height="wrap_content"
+					           android:layout_weight="1"
+					        >
+                               <TextView
+				                    android:layout_width="wrap_content"
+					           		android:layout_height="wrap_content" 
+				                   	android:text="日期："
+				                    android:textColor="@color/dark_bg_text_color"
+				                    android:textSize="@dimen/detail_desc_text_size" 
+				               />
+				               <TextView
+				                   android:id="@+id/text_content_appupdatetime"
+				                    android:layout_width="wrap_content"
+					           		android:layout_height="wrap_content" 
+					           		android:layout_marginLeft="3dip"
+				                   	android:text=""
+				                   	android:singleLine="true"
+				                   	android:ellipsize="end"
+				                    android:textColor="@color/dark_bg_text_color"
+				                    android:textSize="@dimen/detail_desc_text_size" 
+				               />				                                             
+				           	</LinearLayout>                  
+                       </LinearLayout>
+	           
+
+                     	<LinearLayout
+			               android:id="@+id/layout_line2"
+			               android:layout_width="match_parent"
+				           android:layout_height="wrap_content"
+				           android:layout_below="@+id/layout_line1"
+				           android:layout_marginTop="7.1dip"
+				           android:paddingLeft="@dimen/common_list_marginx"
+				           android:paddingRight="@dimen/common_list_marginx"
+				           android:orientation="horizontal">
+				           
+                      	   <LinearLayout
+				               android:layout_width="match_parent"
+					           android:layout_height="wrap_content"
+					           android:layout_weight="1"
+					        >
+                               <TextView
+				                    android:layout_width="wrap_content"
+					           		android:layout_height="wrap_content" 
+				                   	android:text="来源："
+				                    android:textColor="@color/dark_bg_text_color"
+				                    android:textSize="@dimen/detail_desc_text_size" 
+				               />
+				               <TextView
+				                   	android:id="@+id/text_content_appdeveloper"
+				                    android:layout_width="wrap_content"
+					           		android:layout_height="wrap_content" 
+					           		android:layout_marginLeft="3dip"
+				                   	android:text="未知"
+				                   	android:singleLine="true"
+				                   	android:ellipsize="end"
+				                    android:textColor="@color/dark_bg_text_color"
+				                    android:textSize="@dimen/detail_desc_text_size" 
+				               />				                                             
+				           </LinearLayout>                          
+                          </LinearLayout>
+               
+                <View
+	            android:layout_width="match_parent"
+	            android:layout_height="@dimen/top_bar_layout_divider_height"
+	            android:layout_below="@id/layout_line2"
+	            android:layout_marginTop="@dimen/app_detail_desc_margin_bottom"
+	            android:layout_marginLeft="@dimen/common_list_marginx"
+				android:layout_marginRight="@dimen/common_list_marginx"
+	            android:background="@color/common_divider_color" />
+           </RelativeLayout>
+               
+            
+            <RelativeLayout 
+                android:id="@+id/app_description_layout"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dip"
+	            android:layout_below="@id/layout_detail_info"
+	            android:paddingLeft="@dimen/common_list_marginx"
+				android:paddingRight="@dimen/common_list_marginx"
+            >
+			    
+			    <TextView android:id="@+id/category_title"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentTop="true"
+			        android:layout_marginTop="@dimen/app_desc_title_margin_top"
+			        android:textSize="@dimen/common_item_title_text_size"
+			        android:textColor="@color/common_item_title_text_color"
+			        android:text="@string/app_detail_description" />
+                
+			    <ImageView android:id="@+id/description_expand_button"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentTop="true"
+			        android:layout_marginRight="@dimen/app_detail_content_margin_left"
+			        android:layout_marginTop="@dimen/app_desc_title_margin_top"
+			        android:scaleType="center" />
+			    
+			    <TextView android:id="@+id/description_text"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@id/category_title"
+			        android:lineSpacingExtra="4dp" 
+			        android:layout_marginTop="@dimen/app_detail_desc_margin_top"
+			        android:text="暂无"
+			        android:textSize="@dimen/detail_desc_text_size"
+			        android:textColor="@color/dark_bg_text_color"
+			    />
+			    
+	            <View android:id="@+id/desciprtion_divider"
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/top_bar_layout_divider_height"
+	                android:layout_below="@id/description_text"
+	                android:layout_marginTop="@dimen/app_detail_desc_margin_bottom"
+	                android:background="@color/common_divider_color" />
+            </RelativeLayout>
+            
+            <RelativeLayout android:id="@+id/app_updateinfo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_below="@id/app_description_layout"
+                android:paddingLeft="@dimen/common_list_marginx"
+				android:paddingRight="@dimen/common_list_marginx">
+			    
+			    <TextView android:id="@+id/updateinfo_title"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentTop="true"
+			        android:layout_marginTop="@dimen/app_desc_title_margin_top"
+			        android:textSize="@dimen/common_item_title_text_size"
+			        android:textColor="@color/common_item_title_text_color"
+			        android:text="@string/app_detail_update_info" />
+                
+			    <ImageView android:id="@+id/updateinfo_expand_button"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentTop="true"
+			        android:layout_marginRight="@dimen/app_detail_content_margin_left"
+			        android:layout_marginTop="@dimen/app_desc_title_margin_top"
+			        android:scaleType="center" />
+			    
+			    <TextView android:id="@+id/updateinfo_text"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@id/updateinfo_title"
+			        android:lineSpacingExtra="4dp"
+			        android:layout_marginTop="@dimen/app_detail_desc_margin_top"
+			        android:text="暂无"
+			        android:textSize="@dimen/detail_desc_text_size"
+			        android:textColor="@color/dark_bg_text_color"
+			    />
+			    
+			    <View android:id="@+id/app_update_info_divider"
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/top_bar_layout_divider_height"
+	                android:layout_marginTop="@dimen/app_detail_desc_margin_bottom"
+	                android:layout_below="@id/updateinfo_text"
+	                android:background="@color/common_divider_color" />
+            </RelativeLayout>
+            
+            <RelativeLayout android:id="@+id/app_recommend_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_below="@id/app_updateinfo_layout"
+                android:visibility="gone">			   
+			    
+			    <TextView android:id="@+id/recommend_title"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentTop="true"
+			        android:layout_marginLeft="@dimen/app_detail_content_margin_left"
+			        android:layout_marginTop="@dimen/app_desc_title_margin_top"
+			        android:textSize="@dimen/common_item_title_text_size"
+			        android:textColor="@color/common_item_title_text_color"
+			        android:text="相关推荐" />
+			    
+    			<include android:id="@+id/app_recommend_layout"
+       				layout="@layout/app_recommend_layout"
+       				android:layout_width="match_parent"
+       				android:layout_height="wrap_content"
+       				android:layout_marginTop="11.1dip"
+       				android:layout_marginBottom="14.2dip"
+       				android:layout_below="@id/recommend_title" 
+       			/>
+                
+			</RelativeLayout>
+                        
+    	</RelativeLayout>
+    </ScrollView>
+    
+    <include android:id="@+id/loading_layout"
+       layout="@layout/loading_layout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@id/top_bar_layout" 
+       android:visibility="visible"/>
+  
+   	<include android:id="@+id/loading_failed_layout"
+       layout="@layout/loading_failed_layout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@id/top_bar_layout"
+       android:visibility="gone" />
+</RelativeLayout>

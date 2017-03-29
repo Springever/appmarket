@@ -1,0 +1,174 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .DS_Store
+* .idea\
+* .idea\appmarket.iml
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\workspace.xml
+* build.xml
+* jni\
+* jni\.DS_Store
+* jni\jni-encoder\
+* jni\jni-encoder\.DS_Store
+* jni\jni-encoder\Android.mk
+* jni\jni-encoder\Application.mk
+* jni\jni-encoder\armeabi\
+* jni\jni-encoder\armeabi\libm9.a
+* jni\jni-encoder\encoder.cpp
+* jni\jni-encoder\include\
+* jni\jni-encoder\include\Encoder.h
+* jni\jni-encoder\include\M9Codec.h
+* jni\jni-encoder\x86\
+* jni\jni-encoder\x86\libm9.a
+* jni\jni-incupdate\
+* jni\jni-incupdate\Android.mk
+* jni\jni-incupdate\Application.mk
+* jni\jni-incupdate\bsdiff\
+* jni\jni-incupdate\bsdiff\Android.mk
+* jni\jni-incupdate\bsdiff\Makefile
+* jni\jni-incupdate\bsdiff\bsdiff.c
+* jni\jni-incupdate\bsdiff\bsdiff.cpp
+* jni\jni-incupdate\bsdiff\bspatch.cpp
+* jni\jni-incupdate\bzip2\
+* jni\jni-incupdate\bzip2\Android.mk
+* jni\jni-incupdate\bzip2\CHANGES
+* jni\jni-incupdate\bzip2\LICENSE
+* jni\jni-incupdate\bzip2\Makefile
+* jni\jni-incupdate\bzip2\Makefile-libbz2_so
+* jni\jni-incupdate\bzip2\README
+* jni\jni-incupdate\bzip2\README.COMPILATION.PROBLEMS
+* jni\jni-incupdate\bzip2\README.XML.STUFF
+* jni\jni-incupdate\bzip2\blocksort.c
+* jni\jni-incupdate\bzip2\bz-common.xsl
+* jni\jni-incupdate\bzip2\bz-fo.xsl
+* jni\jni-incupdate\bzip2\bz-html.xsl
+* jni\jni-incupdate\bzip2\bzdiff
+* jni\jni-incupdate\bzip2\bzdiff.1
+* jni\jni-incupdate\bzip2\bzgrep
+* jni\jni-incupdate\bzip2\bzgrep.1
+* jni\jni-incupdate\bzip2\bzip.css
+* jni\jni-incupdate\bzip2\bzip2.1
+* jni\jni-incupdate\bzip2\bzip2.1.preformatted
+* jni\jni-incupdate\bzip2\bzip2.txt
+* jni\jni-incupdate\bzip2\bzip2recover.c
+* jni\jni-incupdate\bzip2\bzlib.c
+* jni\jni-incupdate\bzip2\bzlib.h
+* jni\jni-incupdate\bzip2\bzlib_private.h
+* jni\jni-incupdate\bzip2\bzmore
+* jni\jni-incupdate\bzip2\bzmore.1
+* jni\jni-incupdate\bzip2\compress.c
+* jni\jni-incupdate\bzip2\crctable.c
+* jni\jni-incupdate\bzip2\decompress.c
+* jni\jni-incupdate\bzip2\dlltest.c
+* jni\jni-incupdate\bzip2\dlltest.dsp
+* jni\jni-incupdate\bzip2\entities.xml
+* jni\jni-incupdate\bzip2\format.pl
+* jni\jni-incupdate\bzip2\huffman.c
+* jni\jni-incupdate\bzip2\libbz2.def
+* jni\jni-incupdate\bzip2\libbz2.dsp
+* jni\jni-incupdate\bzip2\makefile.msc
+* jni\jni-incupdate\bzip2\manual.html
+* jni\jni-incupdate\bzip2\manual.pdf
+* jni\jni-incupdate\bzip2\manual.ps
+* jni\jni-incupdate\bzip2\manual.xml
+* jni\jni-incupdate\bzip2\mk251.c
+* jni\jni-incupdate\bzip2\randtable.c
+* jni\jni-incupdate\bzip2\sample1.bz2
+* jni\jni-incupdate\bzip2\sample1.ref
+* jni\jni-incupdate\bzip2\sample2.bz2
+* jni\jni-incupdate\bzip2\sample2.ref
+* jni\jni-incupdate\bzip2\sample3.bz2
+* jni\jni-incupdate\bzip2\sample3.ref
+* jni\jni-incupdate\bzip2\spewG.c
+* jni\jni-incupdate\bzip2\unzcrash.c
+* jni\jni-incupdate\bzip2\words0
+* jni\jni-incupdate\bzip2\words1
+* jni\jni-incupdate\bzip2\words2
+* jni\jni-incupdate\bzip2\words3
+* jni\jni-incupdate\bzip2\xmlproc.sh
+* jni\jni-incupdate\jni_bridge\
+* jni\jni-incupdate\jni_bridge\Android.mk
+* jni\jni-incupdate\jni_bridge\bridge.cpp
+* jni\jni-incupdate\jni_bridge\bridge.h
+* jni\jni-incupdate\jni_bridge\cJSON.c
+* jni\jni-incupdate\jni_bridge\cJSON.h
+* jni\jni-incupdate\package\
+* jni\jni-incupdate\package\Android.mk
+* jni\jni-incupdate\package\Defs.h
+* jni\jni-incupdate\package\DirectWriteStream.cpp
+* jni\jni-incupdate\package\DirectWriteStream.h
+* jni\jni-incupdate\package\FileParser.cpp
+* jni\jni-incupdate\package\FileParser.h
+* jni\jni-incupdate\package\Package.cpp
+* jni\jni-incupdate\package\Package.h
+* jni\jni-incupdate\package\ZipEntry.cpp
+* jni\jni-incupdate\package\ZipEntry.h
+* jni\jni-incupdate\package\ZipFile.cpp
+* jni\jni-incupdate\package\ZipFile.h
+* jni\jni-incupdate\package\ZipReadStream.cpp
+* jni\jni-incupdate\package\ZipReadStream.h
+* jni\jni-incupdate\package\ZipWriteHelper.cpp
+* jni\jni-incupdate\package\ZipWriteHelper.h
+* jni\jni-incupdate\package\ZipWriteStream.cpp
+* jni\jni-incupdate\package\ZipWriteStream.h
+* jni\jni-incupdate\test\
+* jni\jni-incupdate\test\Android.mk
+* jni\jni-incupdate\test\test.cpp
+* jni\jni-incupdate\utils\
+* jni\jni-incupdate\utils\inc_log.h
+* jni\jni-uninstallnotify\
+* jni\jni-uninstallnotify\Android.mk
+* jni\jni-uninstallnotify\mylog.h
+* jni\jni-uninstallnotify\uninstallnotify.c
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* libs\apk-merge-0.0.1-SNAPSHOT.jar => app\libs\apk-merge-0.0.1-SNAPSHOT.jar
+* libs\armeabi\libencoder.so => app\src\main\jniLibs\armeabi\libencoder.so
+* libs\x86\libencoder.so => app\src\main\jniLibs\x86\libencoder.so
+* proguard.cfg => app\proguard.cfg
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

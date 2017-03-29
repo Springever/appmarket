@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    
+       <com.appmall.market.widget.LoadMoreListView 
+          	android:id="@+id/listview_detail_comment"
+       		android:layout_width="match_parent"
+       		android:layout_height="match_parent"
+       />
+       
+       <include android:id="@+id/loading_layout"
+       layout="@layout/loading_layout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@id/top_bar_layout" 
+       />
+  
+   		<include android:id="@+id/loading_failed_layout"
+       layout="@layout/loading_failed_layout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@id/top_bar_layout"
+       android:visibility="gone" />
+        
+</RelativeLayout>

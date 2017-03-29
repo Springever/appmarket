@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/common_list_marginx"
+    android:paddingRight="@dimen/common_list_marginx" >
+    
+    <RelativeLayout android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_category_title_height"
+        android:layout_marginBottom="7dip"
+        android:background="#ffffff" >
+	    
+	    <TextView android:id="@+id/category_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginTop="6.5dip"
+	        android:text="@string/app_group"
+            android:textColor="@color/common_bar_text_color"
+            android:textSize="@dimen/common_bar_text_size" />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/header_layout"
+	    android:paddingLeft="@dimen/list_item_topic_item_hori_padding"
+    	android:paddingRight="@dimen/list_item_topic_item_hori_padding"
+	    android:paddingBottom="@dimen/list_item_topic_item_padding_bottom"
+	    android:background="#ffffff" >
+	
+        <com.appmall.market.widget.RoundImageView android:id="@+id/left_image"
+	        android:layout_width="0dp"
+	        android:layout_height="@dimen/list_item_category_advert_height"
+	        android:layout_weight="0.5"
+	        android:layout_marginRight="@dimen/list_item_topic_item_margin_right"
+	        android:src="@drawable/default_app_icon"
+        	android:scaleType="fitXY" />
+	
+	    <com.appmall.market.widget.RoundImageView android:id="@+id/right_image"
+	        android:layout_width="0dp"
+	        android:layout_height="@dimen/list_item_category_advert_height"
+	        android:layout_weight="0.5"
+	        android:src="@drawable/default_app_icon"
+        	android:scaleType="fitXY" />
+	</LinearLayout>
+    
+        	<View
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:paddingLeft="@dimen/common_divideline_margin"
+		        android:paddingRight="@dimen/common_divideline_margin"
+		        android:background="@color/common_divider_color"
+		        android:layout_alignParentBottom="true"
+	   		/>
+    
+</RelativeLayout>

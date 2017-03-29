@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:id="@+id/scroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/setting_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:paddingBottom="44.4dip"
+            android:paddingTop="16.4dip"
+            >
+
+            <LinearLayout
+                android:id="@+id/options_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/list_view_margin_left"
+                android:layout_marginRight="@dimen/list_view_margin_right"
+                android:orientation="vertical" >
+            	<TextView
+    		        		android:layout_width="wrap_content"
+    		                android:layout_height="wrap_content"
+    		                android:text="@string/settings_tip_install"
+    		                android:textSize="@dimen/common_bar_text_size"
+    		                android:textColor="@color/common_bar_text_color"
+            	/>
+            	<View
+            	         	android:layout_width="fill_parent"
+    		                android:layout_height="1px"
+    		                android:layout_marginTop="5dip"
+            	    		android:background="#aaaaaa"
+            	 />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/functions_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/list_view_margin_left"
+                android:layout_marginRight="@dimen/list_view_margin_right"
+                android:layout_marginTop="@dimen/setting_activity_group_margin_top"
+                android:orientation="vertical" >
+                        	<TextView
+    		        		android:layout_width="wrap_content"
+    		                android:layout_height="wrap_content"
+    		                android:text="@string/settings_tip_about"
+    		                android:textSize="@dimen/common_bar_text_size"
+    		                android:textColor="@color/common_bar_text_color"
+            	/>
+            	<View
+            	         	android:layout_width="fill_parent"
+    		                android:layout_height="1px"
+    		                android:layout_marginTop="5dip"
+            	    		android:background="#aaaaaa"
+            	 />
+            	
+            	</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

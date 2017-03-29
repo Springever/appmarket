@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:ellipsize="end"
+    android:singleLine="true"
+    android:textColor="@color/sub_activity_tab_indicator_text_color"
+    android:textSize="@dimen/sub_tab_indicator_label_text_size" />
