@@ -1,9 +1,5 @@
 package com.appmall.market.adapter;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
-
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -14,6 +10,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.v4.view.ViewPager;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,17 +33,21 @@ import com.appmall.market.bean.Advert;
 import com.appmall.market.bean.App;
 import com.appmall.market.bean.AppUpdate;
 import com.appmall.market.bean.Keywords.Keyword;
-import com.appmall.market.common.Utils;
 import com.appmall.market.bitmaputils.ImageLoader;
+import com.appmall.market.common.Utils;
+import com.appmall.market.data.DataCenter;
 import com.appmall.market.data.LocalApps;
 import com.appmall.market.data.LocalApps.LocalAppInfo;
 import com.appmall.market.download.DownloadTask;
 import com.appmall.market.download.TaskStatus;
 import com.appmall.market.widget.CirclePageIndicator;
-import com.appmall.market.widget.RankStarWidget;
-import com.appmall.market.widget.ExpandableTextView;
 import com.appmall.market.widget.DownStatusButton;
-import com.appmall.market.data.DataCenter;
+import com.appmall.market.widget.ExpandableTextView;
+import com.appmall.market.widget.RankStarWidget;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 /**
  * 此Builder用于构造通用列表项

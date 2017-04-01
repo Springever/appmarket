@@ -17,8 +17,8 @@
       },
       "1": {
         "packagename": "com.example.test",
-        "version": 1,
-        "versionname": "1.0",
+        "version": 2,
+        "versionname": "1.1",
         "size": 2048,
         "title": "new patch",
         "updateinfo": "test",
