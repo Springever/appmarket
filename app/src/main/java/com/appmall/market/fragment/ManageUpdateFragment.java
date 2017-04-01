@@ -177,6 +177,7 @@ public class ManageUpdateFragment extends BaseFragment implements IDataCallback,
             UpdateQuery.startQuery(getActivity(), this, allowCache);
         } else {
             AppSettings.setUpdateQueryTime(mContext, System.currentTimeMillis());
+            DataCenter.getInstance().requestAllLocalPackage();
             onDataObtain(IDataConstant.UPDATE_INFO,getResponseDemo());
         }
     }
@@ -235,7 +236,6 @@ public class ManageUpdateFragment extends BaseFragment implements IDataCallback,
                 } else {
                     update.add(au);
                 }
-
                 DownloadTask task = dc.getTask(au.mPackageName);
                 au.setInstStatus(dc.getPackageInstallStatus(au.mPackageName, au.mVersionCode, au.mVersion));
                 au.setTaskStatus(task == null ? TaskStatus.STATUS_UNKNOWN : task.mStatus);
@@ -244,7 +244,6 @@ public class ManageUpdateFragment extends BaseFragment implements IDataCallback,
         mUpdateAdapter.setData(update, ignore);
         showAllUpdateText(update);
         checkAllUpdateVisible(update);
-
         int count = update.size();
         AppSettings.setUpdateCount(getActivity(), count);
         dc.reportUpdateCountChanged();

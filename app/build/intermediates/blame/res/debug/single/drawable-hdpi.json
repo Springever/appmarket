@@ -124,12 +124,12 @@
         "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable-hdpi\\detail_default_icon.png"
     },
     {
-        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\dot_bg.9.png",
-        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable-hdpi\\dot_bg.9.png"
-    },
-    {
         "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\arrow_down.png",
         "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable-hdpi\\arrow_down.png"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\dot_bg.9.png",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable-hdpi\\dot_bg.9.png"
     },
     {
         "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\loading_11.png",
@@ -336,12 +336,12 @@
         "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable-hdpi\\indicator_manage_normal.png"
     },
     {
-        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\loading_09.png",
-        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable-hdpi\\loading_09.png"
-    },
-    {
         "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\indicator_app_normal.png",
         "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable-hdpi\\indicator_app_normal.png"
+    },
+    {
+        "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\loading_09.png",
+        "source": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\src\\main\\res\\drawable-hdpi\\loading_09.png"
     },
     {
         "merged": "D:\\software\\Android\\AndroidStudioProjects\\appmarket\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\default_ptr_rotate.png",

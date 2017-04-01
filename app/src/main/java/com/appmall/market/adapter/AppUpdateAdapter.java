@@ -1,8 +1,5 @@
 package com.appmall.market.adapter;
 
-import java.util.List;
-import java.util.Locale;
-
 import android.content.Context;
 import android.content.res.Resources;
 import android.view.LayoutInflater;
@@ -16,6 +13,9 @@ import com.appmall.market.adapter.ItemBuilder.IgnoreItemViewHolder;
 import com.appmall.market.adapter.ItemBuilder.UpdateInfoHolder;
 import com.appmall.market.adapter.ItemBuilder.UpdateItemViewHolder;
 import com.appmall.market.bean.AppUpdate;
+
+import java.util.List;
+import java.util.Locale;
 
 /**
  * 可更新列表Adapter
