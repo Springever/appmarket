@@ -104,7 +104,7 @@ public class Utils {
 	}
 	
 	public static String getTotalUpdateSizeString(long size) {
-		String text = "涓�閿洿鏂� ";
+		String text = "全部更新";
 	    if(size <= 0)
 	    	return text+"0B";
 	    

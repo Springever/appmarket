@@ -197,7 +197,6 @@ public class ManageUpdateFragment extends BaseFragment implements IDataCallback,
         UpdateQuery.onQuerySuccessful(getActivity());
         mContentView.findViewById(R.id.updateall_button).setVisibility(View.VISIBLE);
         mContentView.findViewById(R.id.ptr_listview).setVisibility(View.VISIBLE);
-
         mInfo = (UpdateInfo) resp.mData;
         {
             Utils.stopLoadingAnimation(mContentView.findViewById(R.id.loading_layout));
@@ -219,13 +218,11 @@ public class ManageUpdateFragment extends BaseFragment implements IDataCallback,
     private void showData() {
         if (mInfo == null)
             return;
-
         DataCenter dc = DataCenter.getInstance();
         Set<String> ignoreSet = UpdateIgnore.getIgnorePackageSet(getActivity());
 
         List<AppUpdate> update = new ArrayList<AppUpdate>();
         List<AppUpdate> ignore = new ArrayList<AppUpdate>();
-
         if (mInfo.mUpdates != null) {
             for (AppUpdate au : mInfo.mUpdates) {
                 int status = dc.getPackageInstallStatus(au.mPackageName, au.mVersionCode, au.mVersion);

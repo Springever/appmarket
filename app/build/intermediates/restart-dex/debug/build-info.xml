@@ -5,40 +5,33 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="32263515676375"
+    timestamp="474836394961763"
     token="3743488032274163419"
-    verifier="COMPATIBLE" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="5772" />
+        duration="3787" />
     <task
         name="instant-run-dex"
-        duration="3505" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="1198" />
+        duration="34" />
     <task
         name="verifier"
-        duration="95" />
+        duration="7" />
 
     <artifact
-        location="D:\software\Android\AndroidStudioProjects\appmarket\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        location="D:\software\Android\AndroidStudioProjects\appmarket\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="31523038696526"
+        timestamp="474836394961763"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\software\Android\AndroidStudioProjects\appmarket\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="32263515676375"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="D:\software\Android\AndroidStudioProjects\appmarket\app\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

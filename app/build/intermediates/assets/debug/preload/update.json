@@ -1,46 +1,123 @@
-{
+﻿{
   "context": "context",
   "entities": {
-    "noticeInterval": 11.11,
-    "upappitems": {
-      "0": {
-        "packagename": "com.yitong.hrbydyx",
-        "version": 33,
-        "versionname": "4.0",
-        "size": 2048,
-        "title": "新发布",
-        "updateinfo": "移动发卡2.0",
+    "noticeInterval": 1491377122879,
+    "upappitems": [
+      {
+        "packagename": "com.mt.mtxx.mtxx",
+        "version": 6200,
+        "versionname": "3.2",
+        "size": 45023969,
+        "title": "美图秀秀",
+        "updateinfo": "增加美颜",
         "pkg_id": 12,
         "isPatch": true,
-        "patchSize": 10,
-        "patchUrl": "http://130.1.11.177:9080/mmp/getPatch.do?packagename=com.hrbb.ydyx"
+        "patchSize": 5242880,
+        "patchUrl": "http://com.mt.mtxx.mtxx/down/getPatch.do?packagename=com.mt.mtxx.mtxx&pkg_id=12",
+        "downUrl": "http://com.mt.mtxx.mtxx/down/getApk.do?packagename=com.mt.mtxx.mtxx&pkg_id=12",
+        "upDate": 1491377122879,
+        "local_version": "1.1",
+        "isPatch": true
       },
-      "1": {
-        "packagename": "com.example.test",
-        "version": 2,
+      {
+        "packagename": "com.sohu.tv",
+        "version": 4400000,
+        "versionname": "4.4",
+        "size": 87031366,
+        "title": "搜狐视频HD",
+        "updateinfo": "增加人民的名义反腐电视剧",
+        "pkg_id": 13,
+        "isPatch": true,
+        "patchSize": 20971520,
+        "patchUrl": "http://com.sohu.tv/down/getPatch.do?packagename=com.mt.mtxx.mtxx&pkg_id=13",
+        "downUrl": "http://com.sohu.tv/down/getApk.do?packagename=com.mt.mtxx.mtxx&pkg_id=13",
+        "upDate": 1491377122879,
+        "local_version": "4.1",
+        "isPatch": true
+      },
+      {
+        "packagename": "com.baidu.BaiduMap.pad",
+        "version": 472,
+        "versionname": "2.4",
+        "size": 104857600,
+        "title": "百度地图",
+        "updateinfo": "增加离线地图",
+        "pkg_id": 14,
+        "isPatch": true,
+        "patchSize": 209715,
+        "patchUrl": "http://com.baidu.BaiduMap.pad/down/getPatch.do?packagename=com.mt.mtxx.mtxx&pkg_id=14",
+        "downUrl": "http://com.baidu.BaiduMap.pad/down/getApk.do?packagename=com.mt.mtxx.mtxx&pkg_id=14",
+        "upDate": 1491377122879,
+        "local_version": "1.1",
+        "isPatch": true
+      },
+      {
+        "packagename": "com.sina.weibotab",
+        "version": 26916,
+        "versionname": "3.5.9",
+        "size": 104857600,
+        "title": "微博HD",
+        "updateinfo": "增加直播",
+        "pkg_id": 15,
+        "isPatch": true,
+        "patchSize": 20971520,
+        "patchUrl": "http://com.baidu.BaiduMap.pad/down/getPatch.do?packagename=com.sina.weibotab&pkg_id=15",
+        "downUrl": "http://com.baidu.BaiduMap.pad/down/getApk.do?packagename=com.sina.weibotab&pkg_id=15",
+        "upDate": 1491377122879,
+        "local_version": "1.1",
+        "isPatch": true
+      },
+      {
+        "packagename": "com.baidu.netdisk_ss",
+        "version": 220,
         "versionname": "1.1",
-        "size": 2048,
-        "title": "new patch",
-        "updateinfo": "test",
-        "pkg_id": 12,
+        "size": 104857600,
+        "title": "百度云",
+        "updateinfo": "增加3TB空间",
+        "pkg_id": 16,
         "isPatch": true,
-        "patchSize": 10,
-        "patchUrl": "http://130.1.11.177:9080/mmp/getPatch.do?packagename=com.hrbb.ydyx"
+        "patchSize": 20971520,
+        "patchUrl": "http://com.baidu.BaiduMap.pad/down/getPatch.do?packagename=com.baidu.netdisk_ss&pkg_id=16",
+        "downUrl": "http://com.baidu.BaiduMap.pad/down/getApk.do?packagename=com.baidu.netdisk_ss&pkg_id=16",
+        "upDate": 1491377122879,
+        "local_version": "1.1",
+        "isPatch": true
+      },
+      {
+        "packagename": "com.taobao.apad",
+        "version": 26,
+        "versionname": "2.6",
+        "size": 104857600,
+        "title": "淘宝HD",
+        "updateinfo": "双11",
+        "pkg_id": 17,
+        "isPatch": true,
+        "patchSize": 40971520,
+        "patchUrl": "http://com.baidu.BaiduMap.pad/down/getPatch.do?packagename=com.taobao.apad&pkg_id=17",
+        "downUrl": "http://com.baidu.BaiduMap.pad/down/getApk.do?packagename=com.taobao.apad&pkg_id=17",
+        "upDate": 1491377122879,
+        "local_version": "1.1",
+        "isPatch": true
       }
-    },
+    ],
     "ignoreappitems": {
+      /*
       "0": {
-        "packagename": "com.hrbvb.hrbydyx",
-        "version": 3,
-        "versionname": "1.2",
-        "size": 2048,
-        "title": "新发布",
-        "updateinfo": "新增惠农通签约",
-        "pkg_id": 12,
+        "packagename": "com.taobao.apad",
+        "version": 26,
+        "versionname": "2.6",
+        "size": 10485760,
+        "title": "淘宝HD",
+        "updateinfo": "双11",
+        "pkg_id": 17,
         "isPatch": true,
-        "patchSize": 10,
-        "patchUrl": "http://130.1.11.177:9080/mmp/getPatch.do?packagename=com.hrbvb.ydyx"
-      }
+        "patchSize": 20971520,
+        "patchUrl": "http://com.baidu.BaiduMap.pad/down/getPatch.do?packagename=com.taobao.apad&pkg_id=17",
+        "downUrl": "http://com.baidu.BaiduMap.pad/down/getApk.do?packagename=com.taobao.apad&pkg_id=17",
+        "upDate": 1491377122879,
+        "local_version": "1.1",
+        "isPatch": true
+      }    */
     }
   }
 }

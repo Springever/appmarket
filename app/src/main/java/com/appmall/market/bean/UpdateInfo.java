@@ -1,18 +1,18 @@
 package com.appmall.market.bean;
 
-import java.util.ArrayList;
-import java.util.List;
+import android.content.Context;
+
+import com.appmall.market.ApplicationImpl;
+import com.appmall.market.common.AppSettings;
+import com.appmall.market.common.UpdateQuery;
+import com.appmall.market.data.IDataBase;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.content.Context;
-
-import com.appmall.market.ApplicationImpl;
-import com.appmall.market.common.AppSettings;
-import com.appmall.market.data.IDataBase;
-import com.appmall.market.common.UpdateQuery;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 更新数据

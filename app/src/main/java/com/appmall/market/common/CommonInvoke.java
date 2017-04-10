@@ -1,10 +1,5 @@
 package com.appmall.market.common;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-
 import android.app.Activity;
 import android.app.PendingIntent;
 import android.app.PendingIntent.CanceledException;
@@ -20,8 +15,8 @@ import android.text.TextUtils;
 import android.widget.ImageView;
 
 import com.appmall.market.R;
-import com.appmall.market.bean.App;
 import com.appmall.market.bean.Advert;
+import com.appmall.market.bean.App;
 import com.appmall.market.bean.AppUpdate;
 import com.appmall.market.data.DataCenter;
 import com.appmall.market.data.LocalApps;
@@ -29,6 +24,11 @@ import com.appmall.market.download.DownloadService;
 import com.appmall.market.download.DownloadTask;
 import com.appmall.market.download.TaskStatus;
 import com.appmall.market.widget.CommonDialog;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
 
 /**
  * 包含整个项目中通用的逻辑
@@ -452,7 +452,6 @@ public class CommonInvoke {
 		boolean isLargeSize = filesize >= CommonInvoke.LARGE_FILE_SIZE;
 		boolean isNetAvailable = Utils.isNetworkAvailable(activity);
 		boolean isWifiConnected = Utils.isWifiConnected(activity);
-		
 		if (isLargeSize && isNetAvailable && !isWifiConnected && !sQueryedNetworkTip) {
 			final Context context = activity;
 			final PendingIntent continueIntent = pendingIntent;
