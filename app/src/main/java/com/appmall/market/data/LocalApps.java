@@ -1,21 +1,5 @@
 package com.appmall.market.data;
 
-import java.io.File;
-import java.text.Collator;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipFile;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -30,12 +14,28 @@ import android.util.Log;
 import com.appmall.market.ApplicationImpl;
 import com.appmall.market.common.Constants;
 import com.appmall.market.common.Utils;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
-import java.security.MessageDigest;
-import java.math.BigInteger;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.File;
 import java.io.InputStream;
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.text.Collator;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipFile;
 /**
  * 扫描并缓存本地已安装的软件
  *  
@@ -74,6 +74,23 @@ public class LocalApps {
 		public String mPackageDir;
 		public String mCrcString;
 		public String mMd5;
+
+		@Override
+		public String toString() {
+			return "LocalAppInfo{" +
+					"mAppLabel=" + mAppLabel +
+					", mAppSize=" + mAppSize +
+					", mIsSystem=" + mIsSystem +
+					", mSignature='" + mSignature + '\'' +
+					", mPackageName='" + mPackageName + '\'' +
+					", mVersionCode=" + mVersionCode +
+					", mLastUpdateTime=" + mLastUpdateTime +
+					", mVersion='" + mVersion + '\'' +
+					", mPackageDir='" + mPackageDir + '\'' +
+					", mCrcString='" + mCrcString + '\'' +
+					", mMd5='" + mMd5 + '\'' +
+					'}';
+		}
 	}
 	
 //	//获取apk文件中的crc
@@ -311,6 +328,7 @@ public class LocalApps {
 		}
 		
 		setLocalAppRefresh(false);
+		Log.d("maowenping",mThirdApps.toString());
 	}
 	
 	@TargetApi(Build.VERSION_CODES.GINGERBREAD)

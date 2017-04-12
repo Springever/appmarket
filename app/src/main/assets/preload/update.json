@@ -93,8 +93,8 @@
         "pkg_id": 17,
         "isPatch": true,
         "patchSize": 40971520,
-        "patchUrl": "http://com.baidu.BaiduMap.pad/down/getPatch.do?packagename=com.taobao.apad&pkg_id=17",
-        "downUrl": "http://com.baidu.BaiduMap.pad/down/getApk.do?packagename=com.taobao.apad&pkg_id=17",
+        "patchUrl": "http://www.taobao.com",
+        "downUrl": "http://www.taobao.com",
         "upDate": 1491377122879,
         "local_version": "1.1",
         "isPatch": true

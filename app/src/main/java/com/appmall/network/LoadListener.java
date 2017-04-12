@@ -16,21 +16,21 @@
 
 package com.appmall.network;
 
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Vector;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import org.apache.http.util.ByteArrayBuffer;
-
 import android.content.Context;
 import android.net.ParseException;
 import android.net.http.SslCertificate;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
+
+import org.apache.http.util.ByteArrayBuffer;
+
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Vector;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @SuppressWarnings("all")
 class LoadListener extends Handler implements EventHandler {
@@ -255,7 +255,7 @@ class LoadListener extends Handler implements EventHandler {
     	
 		if (mTaskListener != null) {
 			if ((mStatusCode >= 301 && mStatusCode <= 303) || mStatusCode == 307) {
-				// �ض���
+
 			} else {
 				HttpTaskEventArg arg = new HttpTaskEventArg();
 				arg.mlen = len;

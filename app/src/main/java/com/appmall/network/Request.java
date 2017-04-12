@@ -16,13 +16,8 @@
 
 package com.appmall.network;
 
-import java.io.EOFException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.zip.GZIPInputStream;
+import android.text.TextUtils;
+import android.util.Log;
 
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
@@ -39,7 +34,13 @@ import org.apache.http.message.BasicHttpEntityEnclosingRequest;
 import org.apache.http.message.BasicHttpRequest;
 import org.apache.http.protocol.RequestContent;
 
-import android.text.TextUtils;
+import java.io.EOFException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.zip.GZIPInputStream;
 
 /***
  * Represents an HTTP request for a given host.
@@ -234,7 +235,6 @@ class Request {
                 }
             }
         }
-
         requestContentProcessor.process(mHttpRequest,
                                         mConnection.getHttpContext());
         httpClientConnection.sendRequestHeader(mHttpRequest);

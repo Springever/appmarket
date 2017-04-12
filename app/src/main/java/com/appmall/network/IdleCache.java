@@ -20,9 +20,9 @@
 
 package com.appmall.network;
 
-import org.apache.http.HttpHost;
-
 import android.os.SystemClock;
+
+import org.apache.http.HttpHost;
 
 /***
  * {@hide}

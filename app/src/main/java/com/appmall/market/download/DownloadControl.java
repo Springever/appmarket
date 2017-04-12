@@ -1,11 +1,5 @@
 package com.appmall.market.download;
 
-import java.io.File;
-import java.lang.ref.WeakReference;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -31,6 +25,12 @@ import com.appmall.network.FileWriterMgr;
 import com.appmall.network.HttpTaskEventArg;
 import com.appmall.network.HttpTaskListener;
 import com.appmall.network.HttpTaskMgr;
+
+import java.io.File;
+import java.lang.ref.WeakReference;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
 
 /**
  * 下载控制逻辑
@@ -386,7 +386,6 @@ public class DownloadControl implements TaskStatus, HttpTaskListener {
 					String localPath = context.getFilesDir().getAbsolutePath();
 					String tempNewFilePath = localPath + task.mPackageName + "_new.apk";
 					String newApkFilePath = patchFilePath.substring(0, patchFilePath.length()-6);
-										
 					if(oldApkFilePath  != null && newApkFilePath != null && patchFilePath != null)
 						Utils.mergeApk(context, task, oldApkFilePath, newApkFilePath, patchFilePath, tempNewFilePath);
 				} else if(task.mIsSignDiff) {

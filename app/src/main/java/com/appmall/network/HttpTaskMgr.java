@@ -125,7 +125,6 @@ public class HttpTaskMgr {
         LoadFileMultiListener loader = LoadFileMultiListener.getFileLoadMultiListener(mContext, task, false,
                 listener, taskid, sWorkThread.getLooper(), writerMgr);
         String method = new String("GET");
-        //璁や负鏄垵娆′笅杞�
         appendHeader(headers, userHeaders);
         if(task.mTransfered == 0) {
         	addContentRange(headers, 0);
