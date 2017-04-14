@@ -1,17 +1,18 @@
 package com.appmall.market;
 
-import java.lang.Thread.UncaughtExceptionHandler;
+import android.app.Application;
+import android.content.Context;
+
 import com.appmall.market.bitmaputils.ImageLoader;
 import com.appmall.market.common.Statistics;
 import com.appmall.market.common.UninstallUtility;
-import android.app.Application;
-import android.content.Context;
+
+import java.lang.Thread.UncaughtExceptionHandler;
 
 public class ApplicationImpl extends Application {
 
 	private static Context mApplicationContext;
-	
-	
+
 	@Override
 	public void onCreate() {
 		super.onCreate();

@@ -1,28 +1,9 @@
 package com.appmall.market.common;
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Map.Entry;
-
-import org.apache.http.client.utils.URLEncodedUtils;
-import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.protocol.HTTP;
-import org.json.JSONObject;
-
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.ActivityManager;
+import android.app.ActivityManager.RunningTaskInfo;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
@@ -32,6 +13,7 @@ import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.Rect;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
@@ -43,7 +25,11 @@ import android.os.Build;
 import android.os.Environment;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
+import android.text.Spannable;
+import android.text.SpannableString;
 import android.text.TextUtils;
+import android.text.style.CharacterStyle;
+import android.text.style.ForegroundColorSpan;
 import android.util.Base64;
 import android.util.Log;
 import android.view.Display;
@@ -51,41 +37,56 @@ import android.view.TouchDelegate;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.appmall.market.ApplicationImpl;
 import com.appmall.market.R;
-import com.appmall.market.activity.CategoryDetailActivity;
 import com.appmall.market.activity.AppDetailActivity;
+import com.appmall.market.activity.CategoryDetailActivity;
 import com.appmall.market.activity.TermActivity;
 import com.appmall.market.activity.TopicDetailActivity;
+import com.appmall.market.bean.Advert;
 import com.appmall.market.bean.App;
 import com.appmall.market.common.ShellUtils.CommandResult;
 import com.appmall.market.data.DataCenter;
 import com.appmall.market.data.IDataConstant;
 import com.appmall.market.data.LocalApps.LocalAppInfo;
+import com.appmall.market.download.DownloadControl.SilenceInstall;
 import com.appmall.market.download.DownloadService;
 import com.appmall.market.download.DownloadTask;
 import com.appmall.market.download.TaskStatus;
-import com.appmall.market.download.DownloadControl.SilenceInstall;
-
-import android.text.SpannableString;
-import android.text.style.CharacterStyle;
-import android.text.Spannable;
-import android.widget.TextView;
-import android.text.style.ForegroundColorSpan;
-import com.appmall.market.bean.Advert;
 import com.appmall.market.pulltorefresh.library.ILoadingLayout;
 import com.appmall.market.widget.DownStatusButton;
 
-import java.io.InputStreamReader;
+import org.apache.http.client.utils.URLEncodedUtils;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.protocol.HTTP;
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
-import java.net.URLEncoder;
-import android.graphics.Rect;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.math.BigInteger;
-import android.app.ActivityManager;
-import android.app.ActivityManager.RunningTaskInfo;
+import java.net.URLEncoder;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Map.Entry;
+
 import cn.uc.appmall.apk.merge.ZipMerge;
+import cn.wjdiankong.bsdiff.PatchUtils;
 
 public class Utils {
 	
@@ -1103,7 +1104,87 @@ public class Utils {
 				DownloadService.getDownloadControl().onTaskStatusChanged(task);
 		}
 	}
-		
+
+	public static class PatchTask extends AsyncTask<Object, Object, Object> {
+
+		private Context mContext;
+
+		public PatchTask(Context context) {
+			mContext = context;
+		}
+
+		@Override
+		protected void onPreExecute() {
+			super.onPreExecute();
+		}
+
+		@Override
+		protected Object doInBackground(Object... params) {
+			DownloadTask task = null;
+			try {
+				task = (DownloadTask) params[0];
+				String oldApkFilePath = (String)params[1];
+				String newApkFilePath = (String)params[2];
+				String patchFilePath = (String)params[3];
+				String tempNewFilePath = (String)params[4];
+				while(isMerging())
+					Thread.sleep(100);
+				setMergeFlag(true);
+				Log.d("demo", "mergeApk start");
+				Log.d("demo", "mergeApk oldApkFilePath = "+oldApkFilePath);
+				Log.d("demo", "mergeApk newApkFilePath = "+newApkFilePath);
+				Log.d("demo", "mergeApk patchFilePath = "+patchFilePath);
+				Log.d("demo", "mergeApk tempNewFilePath = "+tempNewFilePath);
+
+				//test
+				long time1 = System.currentTimeMillis();
+				ZipMerge zipMerge = new ZipMerge();
+				File newFile = new File(newApkFilePath);
+				if(newFile.exists())
+					newFile.delete();
+				//zipMerge.mergePatchByBuffer(oldApkFilePath, patchFilePath,newApkFilePath);
+				int result = PatchUtils.getInstance().patch(oldApkFilePath, newApkFilePath, patchFilePath);
+				long time2 = System.currentTimeMillis() - time1;
+				Log.d("demo", "mergeApk end meregetime = "+ String.valueOf(time2));
+				{
+
+					File patchFile = new File(patchFilePath);
+					if(patchFile.exists())
+						patchFile.delete();
+					task.mTotal = newFile.length();
+					task.mTransfered = task.mTotal;
+					task.mLocalPath = newApkFilePath;
+					task.mStatus = TaskStatus.STATUS_DOWNLOAD;
+				}
+			}
+			catch(Exception e) {
+				e.printStackTrace();
+			}
+			return task;
+		}
+
+
+		@Override
+		protected void onPostExecute(Object result) {
+			setMergeFlag(false);
+			if (result == null)
+				return;
+
+			DownloadTask task = (DownloadTask) result;
+			if(task.mStatus == TaskStatus.STATUS_DOWNLOAD) {
+				if (AppSettings.isRootInstall(mContext) && Utils.isPhoneRoot()) {
+					task.mStatus = TaskStatus.STATUS_INSTALLING;
+					Utils.AsyncTaskExecute(new SilenceInstall(mContext), task);
+				} else if(AppSettings.isAutoInstall(mContext)) {
+					task.mStatus = TaskStatus.STATUS_DOWNLOAD;
+					Utils.reqSystemInstall(mContext, task.mLocalPath);
+				}
+			}
+			if(DownloadService.getDownloadControl() != null)
+				DownloadService.getDownloadControl().onTaskStatusChanged(task);
+		}
+	}
+
 	public static void mergeApk(Context context, final DownloadTask task, final String oldApkFilePath,final String newApkFilePath
 			, final String patchFilePath, final String tempNewFilePath) {
 		
@@ -1115,6 +1196,19 @@ public class Utils {
 		}
 		
 	}
+
+	public static void mergeApkNative(Context context, final DownloadTask task, final String oldApkFilePath,final String newApkFilePath
+			, final String patchFilePath, final String tempNewFilePath) {
+
+		if(task != null) {
+			File oldFile = new File(oldApkFilePath);
+			File patchFile = new File(patchFilePath);
+			if(oldFile.exists() && patchFile.exists())
+				Utils.AsyncTaskExecute(new PatchTask(context), task, oldApkFilePath, newApkFilePath, patchFilePath, tempNewFilePath);
+		}
+
+	}
+
 	public native static int nativeMakeApk(String oldApkFilePath, String newApkFilePath, String patchFilePath );
 	
 }

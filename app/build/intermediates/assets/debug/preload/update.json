@@ -98,7 +98,41 @@
         "upDate": 1491377122879,
         "local_version": "1.1",
         "isPatch": true
+      },
+      {
+        "packagename": "com.hrbvb.hrbydyx",
+        "version": 3,
+        "versionname": "1.2",
+        "size": 43269907,
+        "title": "村行移动营销",
+        "updateinfo": "惠农通签约与解约",
+        "pkg_id": 20,
+        "isPatch": true,
+        "patchSize": 4623453,
+        "patchUrl": "http://130.1.11.143:9080/hmbank/collectWill/download/zxfile.do?fileName=hrbvbydyx.patch",
+        "downUrl": "http://130.1.11.143:9080/hmbank/collectWill/download/zxfile.do?fileName=hrbvbydyx.apk",
+        "upDate": 1492047841193,
+        "local_version": "1.0",
+        "isPatch": true
       }
+      /*
+      {
+        "packagename": "com.hrbvb.hrbydyx",
+        "version": 2,
+        "versionname": "1.0",
+        "size": 38646454,
+        "title": "村行移动营销",
+        "updateinfo": "惠农通签约与解约",
+        "pkg_id": 20,
+        "isPatch": true,
+        "patchSize": 40971520,
+        "patchUrl": "http://130.1.11.177:9080/hmbank/collectWill/download/zxfile.do?fileName=hrbvbydyx.patch",
+        "downUrl": "http://130.1.11.177:9080/hmbank/collectWill/download/zxfile.do?fileName=hrbvbydyx.apk",
+        "upDate": 1492047549503,
+        "local_version": "1.0",
+        "isPatch": true
+      }
+      */
     ],
     "ignoreappitems": {
       /*

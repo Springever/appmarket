@@ -386,8 +386,10 @@ public class DownloadControl implements TaskStatus, HttpTaskListener {
 					String localPath = context.getFilesDir().getAbsolutePath();
 					String tempNewFilePath = localPath + task.mPackageName + "_new.apk";
 					String newApkFilePath = patchFilePath.substring(0, patchFilePath.length()-6);
+
 					if(oldApkFilePath  != null && newApkFilePath != null && patchFilePath != null)
-						Utils.mergeApk(context, task, oldApkFilePath, newApkFilePath, patchFilePath, tempNewFilePath);
+						//Utils.mergeApk(context, task, oldApkFilePath, newApkFilePath, patchFilePath, tempNewFilePath);
+						Utils.mergeApkNative(context, task, oldApkFilePath, newApkFilePath, patchFilePath, tempNewFilePath);
 				} else if(task.mIsSignDiff) {
 					task.mStatus = STATUS_DOWNLOAD;
 					DataCenter.getInstance().reportDownloadEvent(DataCenter.MSG_INSTALL_SIGNATURE_NOTIFY_EVENT, task.mPackageName);
